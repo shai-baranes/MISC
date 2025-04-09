@@ -1,6 +1,6 @@
 import re
 
-with open ('./text for re.txt', 'r') as f:
+with open ('./re_input_file.txt', 'r') as f:
     content = f.read()
 
 
