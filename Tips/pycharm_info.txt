@@ -1,0 +1,32 @@
+pycharm_info.txt
+
+- Double Shift (shift twice): search for anything about pycharm
+- Shift + Ctrl + 'F': 'find in files' (Project/Module/Directory/Scope)
+	(also 'CTRL+F' for search in a single file)
+- Shift + Ctrl + 'R': 'Replace in files' (Project/Module/Directory/Scope)
+	(also 'CTRL+R' for replace in a single file)
+- Shift + Ctrl + 'N': Quick File Open - keyboard usage (instead of DBL-CLICK the file)
+- CTRL + 'E': browse through recent opened files
+- Alt + HOME: Bottom Navigation Bar (instead of using the explorer tree-tool)
+- F8: After having 'Break Point' -> continue using step by step
+- Shift + F8: get out of the step by step mode
+- CTRL + D: duplicates the selected line (like 'Shift+CTRL+D' in Sublime)
+	(also works for partial selection)
+- #TODO : add text to #TODO labels to manage your todo list
+- Shift + F4: open a new instance of the selected file for a better view (any change is immediately reflected) 
+- F4 (also CTRL + LMB): when cursor on any function, the function is retrived (return with CTRL+TAB)
+- Shift + Ctrl + 'T': snipping
+- CTRL + ALT + SHIFT + drag/clicks : rectangular selection!
+- SHIFT + F6 : Refactor->Rename (rename all scoped and exact text/var)
+- CTRL + SHIFT + SPACE: gradual expand selection (same as SHIFT + CTRL + "M" under sublime mode)
+- CTRL + P: if twice, toggles between Project Files & All Files (resembline sublime) use "*" to seek all
+- CTRL + ALT + 'L': reformat the entire code for spacing and visibility!
+- ALT + SHIFT + ("/?): Quick font size adjustments! (either question mark or double quote)
+- ALT + '/': code completion or your own terms completion!
+- ALT + CTRL + 'O': optimize your imports (also by 'dbl shift'->'Actions' & type "optimize")
+- CTRL + SPACE + SPACE: start typing supported or imported package and it shall both complete and import it!
+- 'Evaluate Expression': by selecting expression after break point and right-click, select (also by ALT + F8)
+- Regular Expression Check: cursor between quotes of regexp function: [re.match(''), re.sub(''), re.search('')], followd by ALT+ENTER -> select 'Check RegExp'
+
+
+TBD add to my TODO list to show the employees how to work with the #TODO feature!!!

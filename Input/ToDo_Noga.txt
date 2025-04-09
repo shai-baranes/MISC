@@ -1,0 +1,11 @@
+For the attached LogFile.txt,
+
+1) Print number of lines
+
+2) Print the 3 first fields of each line - only first appearance of the first field - using the exact format as shown below:
+52343 28-05-2017 15:01:54.158
+52356 28-05-2017 15:01:54.731
+52352 28-05-2017 15:01:54.771
+52397 28-05-2017 15:01:55.065
+52324 28-05-2017 15:01:55.226
+...
