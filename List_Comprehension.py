@@ -133,3 +133,18 @@ if all(n>1 for n in new_arr):
 	print("all array elements are > 1")
 else:
 	print("not all array elements are > 1")
+
+
+
+#---------
+
+
+# utilizing If/Else one liner as part of the list comprehension:
+
+
+"Positive" if num >=0 else "Negative" # this is an if/else statement within one line
+
+my_list = [-1,5,-6,7,-9,0]
+
+print(["Positive" if num >=0 else "Negative" for num in my_list])
+# ['Negative', 'Positive', 'Negative', 'Positive', 'Negative', 'Positive']
