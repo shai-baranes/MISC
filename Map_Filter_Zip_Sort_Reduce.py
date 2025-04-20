@@ -156,6 +156,8 @@ list(zip(ids, names, phone_number))
 
 
 ################# Dictionary Comprehension
+# also refer to 'Bro Code': https://www.youtube.com/watch?v=XKHEtdqhLK8&t=18654s
+
 
 simple_dict = {
 	'a': 1,
@@ -163,9 +165,81 @@ simple_dict = {
 	'c': 3,
 }
 
-
 my_dict = {key: value**2 for key, value in simple_dict.items()}
 # {'a': 1, 'b': 4, 'c': 9}
+
+cities_in_F = {
+	'New York': 32,
+	'Boston': 75,
+	'Los Angeles': 100,
+	'Chicago': 50,
+}
+
+
+# what we actually do is quite similar to mapping
+cities_in_C = {key: round((value-32)*5/9, 2) for key, value in cities_in_F.items()}
+# {
+# 	'New York': 0.0,
+# 	 'Boston': 23.89,
+# 	 'Los Angeles': 37.78,
+# 	 'Chicago': 10.0
+# }
+
+
+
+
+cities_in_C = {'_'.join(key.lower().split(" ")): round((value-32)*5/9, 2) for key, value in cities_in_F.items()}
+# {
+# 	'new_york': 0.0,
+# 	 'boston': 23.89,
+# 	 'los_angeles': 37.78,
+# 	 'chicago': 10.0,
+# }
+
+
+weather = {'New York': "snowing", 'Boston': "sunny", 'Los Angeles': "sunny", 'Chicago': "Cloudy"}
+
+sunny_weather = {key: value for key, value in weather.items() if value == "sunny"}
+# {'Boston': 'sunny', 'Los Angeles': 'sunny'}
+
+weather_season = {key: "Summer"  if value == 'sunny' else "Winter"  for key, value in weather.items()}
+# {
+# 	'New York': 'Winter',
+# 	'Boston': 'Summer',
+# 	'Los Angeles': 'Summer',
+# 	'Chicago': 'Winter',
+# }
+
+desc_cities = {key: ("WARM" if value >=20 else "COLD") for key, value in cities_in_C.items()}
+# {
+# 	'new_york': 'COLD',
+# 	'boston': 'WARM',
+# 	'los_angeles': 'WARM',
+# 	'chicago': 'COLD',
+# }
+
+
+def check_temp(value):
+	if value >=70:
+		return "HOT"
+	elif 69>= value >= 40:
+		return "WARM"
+	else:
+		return "COLD"
+
+cities_classified_temp = {key: check_temp(value) for key, value in cities_in_F.items()}
+# cities_classified_temp = {key: value for key, value in cities_in_F.items()}
+
+# {
+# 	'New York': 'COLD',
+# 	'Boston': 'HOT',
+# 	'Los Angeles': 'HOT',
+# 	'Chicago': 'WARM',
+# }
+
+
+
+
 
 
 my_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
@@ -299,3 +373,15 @@ print(data) # sorted is not affecting theh source data
 
 
 ################### Reduce
+
+# from 'Code Bro': https://www.youtube.com/watch?v=XKHEtdqhLK8&t=18010s
+
+import functools
+
+letters = ["H", "E", "L", "L", "O"]
+word = functools.reduce(lambda x, y: x+y, letters)
+# word = "HELLO"
+
+numbers = [1,2,3,4,5]
+factorial = functools.reduce(lambda x, y: x*y, numbers)
+# factorial = 120
