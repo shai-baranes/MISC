@@ -1,0 +1,966 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"de",
+				"defs\tMethod"
+			],
+			[
+				"cls",
+				"class\tNew Class"
+			],
+			[
+				"req",
+				"requests"
+			],
+			[
+				"ret",
+				"return_value"
+			],
+			[
+				"requ",
+				"requests"
+			],
+			[
+				"hee",
+				"https://api.weather.com"
+			],
+			[
+				"get_user",
+				"get_user_from_db"
+			],
+			[
+				"pas",
+				"pass"
+			],
+			[
+				"my",
+				"my_cube"
+			],
+			[
+				"oth",
+				"other_rectangle"
+			],
+			[
+				"_",
+				"__init__(self"
+			],
+			[
+				"cl",
+				"class\tNew Class"
+			],
+			[
+				"met",
+				"method"
+			],
+			[
+				"def",
+				"defs\tMethod"
+			],
+			[
+				"set",
+				"set_wo_virus"
+			],
+			[
+				"pla",
+				"playing"
+			],
+			[
+				"player_",
+				"player_chips"
+			],
+			[
+				"dea",
+				"dealer_hand"
+			],
+			[
+				"play",
+				"player_hand"
+			],
+			[
+				"deal",
+				"dealer_hand"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"dealer",
+				"dealer_wins"
+			],
+			[
+				"sho",
+				"show_all"
+			],
+			[
+				"pa",
+				"player_hand"
+			],
+			[
+				"player",
+				"player_busts"
+			],
+			[
+				"show",
+				"show_some"
+			],
+			[
+				"pl",
+				"player_hand"
+			],
+			[
+				"ca",
+				"cards"
+			],
+			[
+				"whil",
+				"while\tWhile Loop"
+			],
+			[
+				"tr",
+				"try\tTry/Except/Else"
+			],
+			[
+				"class",
+				"tclassocgroups\tLoad associated groups"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"clas",
+				"tclassocvictims\tLoad associated victims"
+			],
+			[
+				"clasas",
+				"ClassName"
+			],
+			[
+				"cal",
+				"calories"
+			],
+			[
+				"try",
+				"try\tTry/Except/Else"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"my_",
+				"my_deck"
+			],
+			[
+				"test",
+				"test_deck"
+			],
+			[
+				"te",
+				"test_player"
+			],
+			[
+				"dec",
+				"deck_comp"
+			],
+			[
+				"s",
+				"suit"
+			],
+			[
+				"im",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"gue",
+				"GuessGame"
+			],
+			[
+				"ass",
+				"assertEqual"
+			],
+			[
+				"main",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"su",
+				"SuperList"
+			],
+			[
+				"di",
+				"displaygender"
+			],
+			[
+				"so",
+				"sorted"
+			],
+			[
+				"packe",
+				"packets"
+			],
+			[
+				"enc",
+				"encrypt"
+			],
+			[
+				"en",
+				"encrypted_message"
+			],
+			[
+				"Wor",
+				"WordSet"
+			],
+			[
+				"wor",
+				"words"
+			],
+			[
+				"word",
+				"wordSet"
+			],
+			[
+				"Wo",
+				"WordSet"
+			],
+			[
+				"re",
+				"results2"
+			],
+			[
+				"resu",
+				"results2"
+			],
+			[
+				"C",
+				"CustomException"
+			],
+			[
+				"uni",
+				"uniqueList"
+			],
+			[
+				"imag",
+				"image_url"
+			],
+			[
+				"arra",
+				"array_2d"
+			],
+			[
+				"arr",
+				"array_2d"
+			],
+			[
+				"righ",
+				"right_on"
+			],
+			[
+				"ex",
+				"EXCEL_SOURCE"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Microsoft Windows [Version 10.0.26100.3775]\n(c) Microsoft Corporation. All rights reserved.\n\nC:\\Python_Rust_Removal\\MISC>git init\nReinitialized existing Git repository in C:/Python_Rust_Removal/MISC/.git/\n\nC:\\Python_Rust_Removal\\MISC>git add .\n\nC:\\Python_Rust_Removal\\MISC>git status\nOn branch main\nYour branch is up to date with 'origin/main'.\n\nnothing to commit, working tree clean\n\nC:\\Python_Rust_Removal\\MISC>git add .\n\nC:\\Python_Rust_Removal\\MISC>git init\nReinitialized existing Git repository in C:/Python_Rust_Removal/MISC/.git/\n\nC:\\Python_Rust_Removal\\MISC>git add .\n\nC:\\Python_Rust_Removal\\MISC>git status\nOn branch main\nYour branch is up to date with 'origin/main'.\n\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n        modified:   List_Comprehension.py\n\n\nC:\\Python_Rust_Removal\\MISC>git commit -m \"adding if/else one liner to list comprehension\"\n[main 6fdc1d3] adding if/else one liner to list comprehension\n 1 file changed, 15 insertions(+)\n\nC:\\Python_Rust_Removal\\MISC>git push\nEnumerating objects: 5, done.\nCounting objects: 100% (5/5), done.\nDelta compression using up to 12 threads\nCompressing objects: 100% (3/3), done.\nWriting objects: 100% (3/3), 506 bytes | 506.00 KiB/s, done.\nTotal 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (2/2), completed with 2 local objects.                                                                                                                            \nTo https://github.com/shai-baranes/MISC.git\n   fa659ce..6fdc1d3  main -> main\n\nC:\\Python_Rust_Removal\\MISC>",
+			"settings":
+			{
+				"buffer_size": 1593,
+				"line_ending": "Windows",
+				"name": "C:\\WINDOWS\\system32\\cmd.exe",
+				"scratch": true
+			},
+			"undo_stack":
+			[
+				[
+					316,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAACAQAAAAAAAAvAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG9yaWdpbiAIBAAAAAAAAAkEAAAAAAAAAAAAAAgEAAAAAAAACAQAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAACQQAAAAAAAAJBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					318,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAABwQAAAAAAAAuAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG9yaWdpbgcEAAAAAAAACQQAAAAAAAAAAAAABwQAAAAAAAAHBAAAAAAAAAIAAAAgIA",
+					"AQAAAAAAAAABAAAACAQAAAAAAAAIBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					320,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAABgQAAAAAAAAtAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG9yaWdpBgQAAAAAAAAJBAAAAAAAAAAAAAAGBAAAAAAAAAYEAAAAAAAAAwAAACAgIA",
+					"AQAAAAAAAAABAAAABwQAAAAAAAAHBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					322,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAABQQAAAAAAAAsAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG9yaWcFBAAAAAAAAAkEAAAAAAAAAAAAAAUEAAAAAAAABQQAAAAAAAAEAAAAICAgIA",
+					"AQAAAAAAAAABAAAABgQAAAAAAAAGBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					324,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAABAQAAAAAAAArAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG9yaQQEAAAAAAAACQQAAAAAAAAAAAAABAQAAAAAAAAEBAAAAAAAAAUAAAAgICAgIA",
+					"AQAAAAAAAAABAAAABQQAAAAAAAAFBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					326,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAAAwQAAAAAAAAqAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG9yAwQAAAAAAAAJBAAAAAAAAAAAAAADBAAAAAAAAAMEAAAAAAAABgAAACAgICAgIA",
+					"AQAAAAAAAAABAAAABAQAAAAAAAAEBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					328,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAAAQQAAAAAAAApAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IG8BBAAAAAAAAAkEAAAAAAAAAAAAAAIEAAAAAAAAAgQAAAAAAAAHAAAAICAgICAgIA",
+					"AQAAAAAAAAABAAAAAwQAAAAAAAADBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					330,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAAAQQAAAAAAAAoAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11IAEEAAAAAAAACQQAAAAAAAAAAAAAAQQAAAAAAAABBAAAAAAAAAgAAAAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAAgQAAAAAAAACBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					332,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAAAAQAAAAAAAAnAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC11AAQAAAAAAAAJBAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAACQAAACAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAAQQAAAAAAAABBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					334,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAA/gMAAAAAAAAmAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIC3+AwAAAAAAAAkEAAAAAAAAAAAAAP8DAAAAAAAA/wMAAAAAAAAKAAAAICAgICAgICAgIA",
+					"AQAAAAAAAAABAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					336,
+					1,
+					"terminus_render",
+					null,
+					"AwAAANoDAAAAAAAA/gMAAAAAAAAlAAAAQzpcUHl0aG9uX1J1c3RfUmVtb3ZhbFxNSVNDPmdpdCBwdXNoIP4DAAAAAAAACQQAAAAAAAAAAAAA/gMAAAAAAAD+AwAAAAAAAAsAAAAgICAgICAgICAgIA",
+					"AQAAAAAAAAABAAAA/wMAAAAAAAD/AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					338,
+					1,
+					"terminus_render",
+					null,
+					"AQAAAP4DAAAAAAAA/wMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/gMAAAAAAAD+AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					339,
+					4,
+					"terminus_render",
+					null,
+					"FwAAAP8DAAAAAAAAAAQAAAAAAAAAAAAA/wMAAAAAAAAcBAAAAAAAAAEAAABFHAQAAAAAAAAdBAAAAAAAAAAAAAAdBAAAAAAAAEAEAAAAAAAAAAAAAEAEAAAAAAAAQQQAAAAAAAAAAAAAQQQAAAAAAABpBAAAAAAAAAAAAABpBAAAAAAAAGoEAAAAAAAAAAAAAGoEAAAAAAAAkAQAAAAAAAAAAAAAkAQAAAAAAACRBAAAAAAAAAAAAACRBAAAAAAAAM0EAAAAAAAAAAAAAM0EAAAAAAAAzgQAAAAAAAAAAAAAzgQAAAAAAAALBQAAAAAAAAAAAAALBQAAAAAAAAwFAAAAAAAAAAAAAAwFAAAAAAAAMAUAAAAAAAAAAAAAMAUAAAAAAADNBQAAAAAAAAAAAAAMBQAAAAAAAFEFAAAAAAAAwQAAAHJlbW90ZTogUmVzb2x2aW5nIGRlbHRhczogICAwJSAoMC8yKSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBRBQAAAAAAAM0FAAAAAAAAAAAAAM0FAAAAAAAAzgUAAAAAAAAAAAAAzgUAAAAAAAD5BQAAAAAAAAAAAAD5BQAAAAAAAPoFAAAAAAAAAAAAAPoFAAAAAAAAGwYAAAAAAAAAAAAAGwYAAAAAAAAdBgAAAAAAAAAAAAAdBgAAAAAAADkGAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/wMAAAAAAAD/AwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "List_Comprehension.py",
+			"settings":
+			{
+				"buffer_size": 4415,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAO4PAAAAAAAA7w8AAAAAAAAAAAAA7w8AAAAAAADwDwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA7g8AAAAAAADuDwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAAPAPAAAAAAAAPxEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8A8AAAAAAADwDwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Retrieve multiple email addresses"
+			],
+			[
+				"Snippet: clas",
+				"Snippet: New Class"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 142.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Python_Rust_Removal/MISC"
+	],
+	"file_history":
+	[
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/List_Comprehension.py",
+		"/C/Python_Rust_Removal/temp.py",
+		"/C/Python_Rust_Removal/My_PyTest/README.md",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_square.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_rectangle.py",
+		"/C/Python_Rust_Removal/My_PyTest/src/shapes_inheritance.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_service.py",
+		"/C/Python_Rust_Removal/My_PyTest/src/service.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_MockWeather.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_is_prime.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_db.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/my_pytest_project.sublime-project",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_circle.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_TC3.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_TC2.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/test_TC1.py",
+		"/C/Python_Rust_Removal/My_PyTest/pyproject.toml",
+		"/C/Python_Rust_Removal/My_PyTest/requirements.txt",
+		"/C/Python_Rust_Removal/My_PyTest/src/TC1.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/__init__.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/conftest.py",
+		"/C/Python_Rust_Removal/My_PyTest/.gitignore",
+		"/C/Python_Rust_Removal/My_PyTest/.github/workflows/pytest.yml",
+		"/C/Python_Rust_Removal/My_PyTest/conftest.p_y",
+		"/C/Python_Rust_Removal/My_PyTest/.coverage",
+		"/C/Python_Rust_Removal/My_PyTest/src/__init__.py",
+		"/C/Python_Rust_Removal/My_PyTest/src/MockWeather.py",
+		"/C/Python_Rust_Removal/My_PyTest/src/school.py",
+		"/C/Python_Rust_Removal/My_PyTest/tests/.pytest_cache/v/cache/lastfailed",
+		"/C/Python_Rust_Removal/My_PyTest/tests/.pytest_cache/v/cache/nodeids",
+		"/C/Python_Rust_Removal/My_PyTest/temp_perplexity.txt",
+		"/C/Python_Rust_Removal/My_PyTest/src/my_functions.py",
+		"/C/Python_Rust_Removal/My_PyTest/test_TC2.py",
+		"/C/Python_Rust_Removal/My_PyTest/src/TC2.py",
+		"/C/Users/shaib/OneDrive/Documents/X-Y-Z Distance Score/x_y_z_script.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Dictionary_Comprehension.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/temp_for_rafael.txt",
+		"/C/Users/shaib/OneDrive/Documents/X-Y-Z Distance Score/x_y_z_script - Dataclass.py",
+		"/C/Users/shaib/OneDrive/Documents/regexp_trials.py",
+		"/C/Users/shaib/OneDrive/Documents/prague_expenses.txt",
+		"/C/Users/shaib/OneDrive/Documents/EPD Restored from My Documents (Root)/my_dataclass.py",
+		"/C/Users/shaib/OneDrive/Documents/Regular Expression/re_script.py",
+		"/C/Users/shaib/OneDrive/Documents/JIRA Master Report/JIRA Master Report.py",
+		"/C/Users/shaib/OneDrive/Documents/Noga Home Assignment/Noga_assignment.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/my_unit_test.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTestProj/guess_game.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/Cards Game/main.py",
+		"/C/Python_Rust_Removal/Keith Galli/Keith_Pandas_Fifa_Data.py",
+		"/C/Python_Rust_Removal/Keith Galli/Keith_Pandas_Gas_Prices.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTestProj/test4guess.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTestProj/test4main.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTestProj/main.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Numpy_Arrays.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Image Colors/office_building.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Image Colors/image_colors.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/extending_build_in_class.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Custom_Exceptions.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/recursions_with_timeit.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/sort_vs_sorted.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/my_lambda.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/stam.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Static_Instance_Methods.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/my_threading.py",
+		"/C/Users/shaib/PycharmProjects/gitTestpythonProject1/main.py",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/info.txt",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/decorators.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/class_protected.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/my_class_inheritence.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/regular_expression.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/map_filter_zip_reduce_lambda.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/Super_List.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/classes_advanced.py",
+		"/C/Users/shaib/OneDrive/Documents/temp.txt",
+		"/C/Users/shaib/OneDrive/Documents/noga_info.txt",
+		"/C/Users/shaib/OneDrive/Documents/pycharm_info.txt",
+		"/C/Users/shaib/OneDrive/Documents/EPD_info.txt",
+		"/C/Users/shaib/OneDrive/Documents/Python Simplified Channel/Pandas/my_pandas.py",
+		"/C/Users/shaib/OneDrive/Documents/JIRA Manipulation/jira_manip_basic_new.py",
+		"/C/Users/shaib/OneDrive/Documents/X-Y-Z Distance Score/x_y_z_for_Adi.py",
+		"/C/Users/shaib/OneDrive/Documents/Complaints Dashboard/complaints data sync_3.py",
+		"/C/Users/shaib/OneDrive/Documents/URL_LIB-Python/BS_scrap_table.py",
+		"/C/Users/shaib/OneDrive/Documents/URL_LIB-Python/Beautiful-soup.py",
+		"/C/Users/shaib/OneDrive/Documents/URL_LIB-Python/web_scrapping_request.py",
+		"/C/Users/shaib/OneDrive/Documents/URL_LIB-Python/requests_module.py",
+		"/C/Users/shaib/OneDrive/Documents/URL_LIB-Python/urllib_course.py",
+		"/C/Users/shaib/OneDrive/Documents/URL_LIB-Python/oncohost.py",
+		"/C/Users/shaib/OneDrive/Documents/EPD Restored from My Documents (Root)/my_new_report_2.py",
+		"/C/Users/shaib/OneDrive/Documents/EPD Restored from My Documents (Root)/set_manip.py",
+		"/C/Users/shaib/OneDrive/Documents/EPD Restored from My Documents (Root)/Data Frame Manip - Full Course for Begin.txt",
+		"/C/Python_Rust_Removal/Keith Galli/info.txt",
+		"/C/Python_Rust_Removal/Keith Galli/Keith_Pandas_Plots.py",
+		"/C/Users/shaib/AppData/Local/Programs/Python/Python311/Lib/site-packages/matplotlib/pyplot.py",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/SublimeLinter-pylint/.python-version",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/User/SublimergeSummaryPanel.sublime-color-scheme",
+		"/D/TeslaCam/SavedClips/2024-09-15_18-31-09/event.json",
+		"/C/Users/shaib/list_wo_virus.txt",
+		"/C/Users/shaib/list_w_virus.txt",
+		"/C/Users/shaib/ttt.py",
+		"/C/Users/shaib/Downloads/my_dataclass.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTestProj/test.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTestProj/new_test.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTest/test.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTest/main.py",
+		"/C/Users/shaib/OneDrive/Documents/python_attempts/myUnitTest/assertions_options.txt",
+		"<untitled 534>",
+		"/C/Users/shaib/PycharmProjects/gitTestpythonProject1/.git/index",
+		"/C/Users/shaib/PycharmProjects/gitTestpythonProject1/.git/HEAD",
+		"/C/Users/shaib/PycharmProjects/gitTestpythonProject1/.git/description",
+		"/C/Users/shaib/PycharmProjects/gitTestpythonProject1/.git/config",
+		"/C/Users/shaib/PycharmProjects/gitTestpythonProject1/.git/COMMIT_EDITMSG",
+		"/C/Users/shaib/OneDrive/Documents/List Comprehension/Numpy_Arrays.py",
+		"/C/Users/shaib/OneDrive/Documents/List Comprehension/Classes_Basic.py",
+		"/C/Users/shaib/OneDrive/Documents/List Comprehension/Dictionary_Comprehension.py",
+		"/C/Users/shaib/OneDrive/Documents/List Comprehension/List_Comprehension.py",
+		"/C/Users/shaib/OneDrive/Documents/Complaints Dashboard/Complaints/Complaints Dashboard_4RND.xlsx",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/shaib/OneDrive/Documents/MSD_Nethania potential interview.txt",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/User/Package Control.sublime-settings",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/shaib/OneDrive/Documents/Noga Home Assignment/matrix_assignment.py",
+		"/C/Users/shaib/Downloads/nono.py",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/Expand Selection to Whitespace/README.md",
+		"/C/Users/shaib/AppData/Roaming/Sublime Text/Packages/BeyondCompare/BeyondCompare.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								753,
+								753
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"auto_complete": false,
+							"auto_complete_commit_on_tab": false,
+							"bracket_highlighter.clone_locations":
+							{
+							},
+							"bracket_highlighter.ignore": true,
+							"color_scheme": "Terminus.hidden-color-scheme",
+							"default_dir": "C:\\Python_Rust_Removal\\MISC",
+							"draw_centered": false,
+							"draw_indent_guides": false,
+							"draw_unicode_white_space": false,
+							"draw_white_space": "none",
+							"gutter": false,
+							"highlight_line": false,
+							"is_widget": true,
+							"result_base_dir": "C:\\Python_Rust_Removal\\MISC",
+							"result_file_regex": null,
+							"result_line_regex": null,
+							"rulers":
+							[
+								500
+							],
+							"scroll_past_end": true,
+							"show_definitions": true,
+							"syntax": "Terminus View.sublime-syntax",
+							"terminus.highlight_counter": 1,
+							"terminus_view": true,
+							"terminus_view.args":
+							{
+								"auto_close": true,
+								"cancellable": false,
+								"cmd":
+								[
+									"cmd.exe"
+								],
+								"cwd": "C:\\Python_Rust_Removal\\MISC",
+								"default_title": "Command Prompt",
+								"env":
+								{
+									"PROMPT_TOOLKIT_COLOR_DEPTH": "DEPTH_8_BIT",
+									"TERMINUS_SUBLIME": "1",
+									"TERM_PROGRAM": "Terminus-Sublime"
+								},
+								"file_regex": null,
+								"line_regex": null,
+								"panel_name": "Terminus",
+								"reactivable": true,
+								"show_in_panel": null,
+								"tag": null,
+								"timeit": false,
+								"title": null,
+								"view_settings":
+								{
+								}
+							},
+							"terminus_view.cancellable": false,
+							"terminus_view.key.ctrl+k": true,
+							"terminus_view.key.ctrl+p": true,
+							"terminus_view.natural_keyboard": true,
+							"terminus_view.reactivable": true,
+							"terminus_view.tag": null,
+							"terminus_view.viewport_y": 0.0,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "List_Comprehension.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4415,
+								4415
+							]
+						],
+						"settings":
+						{
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1541.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.diff_views":
+	{
+		"height": 209.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/SublimeREPL-python.sublime-build",
+	"project": "MISC.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"CMD",
+				"C:\\WINDOWS\\system32\\cmd.exe"
+			],
+			[
+				"cmd",
+				"C:\\WINDOWS\\system32\\cmd.exe"
+			],
+			[
+				"",
+				"C:\\WINDOWS\\system32\\cmd.exe"
+			],
+			[
+				"shape",
+				"src\\shapes_inheritance.py"
+			],
+			[
+				"info",
+				"Python Simplified Channel\\info.txt"
+			],
+			[
+				".py",
+				"myUnitTestProj\\main.py"
+			],
+			[
+				"in",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\EPD_info.txt"
+			],
+			[
+				"unit",
+				"Python Simplified Channel\\my_unit_test.py"
+			],
+			[
+				"noga",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\noga_info.txt"
+			],
+			[
+				"decor",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\python_attempts\\decorators.py"
+			],
+			[
+				"class",
+				"Classes_Basic.py"
+			],
+			[
+				"diction",
+				"Dictionary_Comprehension.py"
+			],
+			[
+				"xyz",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\X-Y-Z Distance Score\\x_y_z_script - Dataclass.py"
+			],
+			[
+				"stam",
+				"stam.py"
+			],
+			[
+				"my_unit",
+				"my_unit_test.py"
+			],
+			[
+				"jira",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\JIRA Manipulation\\jira_manip_basic_new.py"
+			],
+			[
+				"x_y_z",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\X-Y-Z Distance Score\\x_y_z_script.py"
+			],
+			[
+				"compli",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\Complaints Dashboard\\complaints data sync_3.py"
+			],
+			[
+				"jira ",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\JIRA Master Report\\JIRA Master Report.py"
+			],
+			[
+				"cust",
+				"Custom_Exceptions.py"
+			],
+			[
+				"numpy",
+				"Numpy_Arrays.py"
+			],
+			[
+				"clas",
+				"Classes_Basic.py"
+			],
+			[
+				"num",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\List Comprehension\\Numpy_Arrays.py"
+			],
+			[
+				"inf",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\EPD_info.txt"
+			],
+			[
+				"MSC",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\MSC_Nethania potential interview.txt"
+			],
+			[
+				"master",
+				"C:\\Users\\shaib\\OneDrive\\Documents\\JIRA Master Report\\JIRA Master Report.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 296.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 348.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
