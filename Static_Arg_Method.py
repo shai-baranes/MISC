@@ -77,7 +77,7 @@ for punc in WordSet.replacePuncs:
 # =========================now with decorator for Static Methods===================
 
 class WordSet():
-	replacePuncs = ['\'', '!', '.', ','] # static variable
+	replacePuncs = ['\'', '!', '.', ','] # static variable/argument
 	def __init__(self):
 		self.words = set() # empty set of words
 

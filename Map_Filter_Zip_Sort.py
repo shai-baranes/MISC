@@ -13,6 +13,41 @@ list(map(multiply_by2, [1,2,3])) # [2, 4, 6]
 list(map(lambda i: i*2, [1,2,3])) # [2, 4, 6] as well
 
 
+
+# another example from 'Code Bro': https://www.youtube.com/watch?v=XKHEtdqhLK8&t=17602s
+
+store = [
+		("shirt", 20.00),
+		("pants", 25.00),
+		("jacket", 50.00),
+		("socks", 10.00),
+]
+
+
+to_NIS = lambda data: (data[0], data[1]*3.8)
+to_NIS_2 = lambda data: (f"{data[0]}_NIS", data[1])
+
+
+store_NIS = map(to_NIS, store) # arg1 = function, arg2 = data
+# ('shirt', 76.0)
+# ('pants', 95.0)
+# ('jacket', 190.0)
+# ('socks', 38.0)
+
+store_NIS = map(to_NIS_2, store_NIS)
+for line in store_NIS:
+	print(line)
+# ('shirt_NIS', 76.0)
+# ('pants_NIS', 95.0)
+# ('jacket_NIS', 190.0)
+# ('socks_NIS', 38.0)
+
+
+# can be coverted to a list:
+print(list(map(to_NIS, store))) # [('shirt', 76.0), ('pants', 95.0), ('jacket', 190.0), ('socks', 38.0)]
+
+
+
 # ---
 
 # list comprehension advanced
@@ -56,7 +91,22 @@ list(filter(lambda item: item%2!=0, my_list)) # same as above
 
 
 
+# from 'Bro Code': https://www.youtube.com/watch?v=XKHEtdqhLK8
 
+
+# filter(function, iterable)
+friends = [
+			("Rachel", 19),
+			("Monica", 18),
+			("'Phoebe", 17),
+			("Joey", 16),
+			("Chandler", 21),
+			("Ross" , 20)
+		  ]
+
+age = lambda data: data [1] >= 18
+drinking_buddies = list(filter(age, friends))
+# [('Rachel', 19), ('Monica', 18), ('Chandler', 21), ('Ross', 20)]
 
 
 
@@ -246,3 +296,6 @@ print(sorted(data)) # works on imutable items like tuple
 print(data) # sorted is not affecting theh source data
 # (7, 2, 5, 6, 1, 3, 9, 10, 4, 8)
 
+
+
+################### Reduce

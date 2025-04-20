@@ -60,3 +60,70 @@ help(build_quadratic_function)
 
 # build_quadratic_function(a, b, c)
 #     Returns the function f(x) = ax^2 + bx + c
+
+
+
+
+# -----------------------------------
+
+# Additional Lambda examples from 'Bro Code': 'https://www.youtube.com/watch?v=XKHEtdqhLK8&t=16870s'
+
+double = lambda x: x*2
+multiply = lambda x, y: x*y
+add = lambda x, y: x+y
+full_name = lambda first, last: f"{first.capitalize()} {last.capitalize()}"
+age_check = lambda age: True if age >= 18 else False
+
+
+double(7) # 14
+multiply(2,5) # 10
+full_name("shai", "baranes") # 'Shai Baranes'
+age_check(17) # False
+
+
+
+# sorting w/ lambda
+students = [
+			("Squidward", "F", 60),
+			("Sandy", "A", 33),
+			("Patrick", "D", 36),
+			("Spongebob", "B", 20),
+			("Mr. Krabs" ,"C", 78),
+			]
+
+grade = lambda items: items [1]
+# grade = lambda lines: lines [1]
+students.sort(key=grade)
+for i in students:
+	print(i)
+
+
+## sort by grages:
+# ('Sandy', 'A', 33)
+# ('Spongebob', 'B', 20)
+# ('Mr. Krabs', 'C', 78)
+# ('Patrick', 'D', 36)
+# ('Squidward', 'F', 60
+
+age = lambda lines: lines [2]
+students.sort(key=age, reverse=True)
+for i in students:
+	print(i)
+
+## sort by ages (reversed)
+# ('Mr. Krabs', 'C', 78)
+# ('Squidward', 'F', 60)
+# ('Patrick', 'D', 36)
+# ('Sandy', 'A', 33)
+# ('Spongebob', 'B', 20)
+
+
+sorted_students = sorted(students, key=grade)
+for i in sorted_students:
+	print(i)
+
+# ('Sandy', 'A', 33)
+# ('Spongebob', 'B', 20)
+# ('Mr. Krabs', 'C', 78)
+# ('Patrick', 'D', 36)
+# ('Squidward', 'F', 60)

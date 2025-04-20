@@ -1,5 +1,6 @@
 # List Comprehension - Python Simplified / Maria
 # now from https://www.youtube.com/watch?v=SNq4C988FjU
+# also incorporating the Walrus operation below
 
 bits = [False, True, False, False, True, False, False, True]
 
@@ -148,3 +149,33 @@ my_list = [-1,5,-6,7,-9,0]
 
 print(["Positive" if num >=0 else "Negative" for num in my_list])
 # ['Negative', 'Positive', 'Negative', 'Positive', 'Negative', 'Positive']
+
+
+
+
+# --------------------#############-----------------
+
+# walrus operator:
+# not same but nice and practical (from 'Bro Code': 'https://www.youtube.com/watch?v=XKHEtdqhLK8&t=16060s' )
+
+# assign values to variables as part of a lrger expression
+
+
+foods = list()
+# foods = []
+while True:
+	food = input("What food do you like? ('q' to quit): ")
+	if food.lower() == 'q':
+		break
+	foods.append(food)
+
+# and in a shorter Walrus way:
+
+while (food := input("Again, what food do you like? ('q' to quit): ")).lower() != 'q':
+	foods.append(food)
+
+
+
+
+
+# --------------------#############-----------------
