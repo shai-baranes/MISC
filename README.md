@@ -1,6 +1,6 @@
 
 
-# My Headrt Decorator func:
+# My Func/App Header Decorator func:
 
 > def header_creator(text):
 > 	print(f" {'#'*100}")	

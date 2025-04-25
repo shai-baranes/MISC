@@ -8,7 +8,7 @@
 # 	print("", "#"*100)
 
 
-# header_creator("Proper 'Function' Documentation")
+# header_creator("Unpacking the 'list' values into the function!")
 
 
 
@@ -90,9 +90,110 @@ print(meows, end="")
 
 
 # basic unpack on list
-list = [1,2,3,4,5]
-print(*list) # 1 2 3 4 5
-print(*list, sep=', ', end="") # 1, 2, 3, 4, 5
+my_list = [1,2,3,4,5]
+print(*my_list) # 1 2 3 4 5
+print(*my_list, sep=', ', end="") # 1, 2, 3, 4, 5
+
+
+
+def total_knuts(galleons, sickles, knuts):
+	return (galleons *17 + sickles) *29 + knuts
+
+coins = [100,50,25]
+
+
+
+
+
+
+ ####################################################################################################
+ #                                                                                                  #
+ #                          Unpacking the 'list' values into the function!                          #
+ #                                                                                                  #
+ ####################################################################################################
+
+print(total_knuts(100, 50, 25), "Knuts") # 50775 Knuts
+print(total_knuts(coins[0], coins[1], coins[2]), "Knuts") # 50775 Knuts
+
+# here comes the magic!
+print(total_knuts(*coins), "Knuts") # 50775 Knuts
+
+# -----------------------------------
+
+names = ["galleons", "sickles", "knuts"]
+coins = [100,50,25]
+
+my_zip = list(zip(names, coins))
+print(my_zip)
+# [('galleons', 100), ('sickles', 50), ('knuts', 25)]
+
+
+my_dict = {}
+
+# getting assistance from zip to produce my dict()
+for item in my_zip:
+	my_dict[item[0]] = item[1]
+
+
+my_dict2 = {}
+
+# assuming both names & coins having the same length (len)
+# & same results without the assistance by zip
+for i in range(len(names)):
+	my_dict2[names[i]] = coins[i]
+
+
+
+print(my_dict)
+# {'galleons': 100, 'sickles': 50, 'knuts': 25}
+
+print(my_dict2) # same 
+# {'galleons': 100, 'sickles': 50, 'knuts': 25}
+
+
+# now using dictionary comprehension:
+names = ["galleons", "sickles", "knuts"]
+coins = [100,50,25]
+
+print({name: coin for name, coin in zip(names,  coins)})
+# {'galleons': 100, 'sickles': 50, 'knuts': 25}
+
+
+too many values to unpack (expected 2)
+
+
+ ####################################################################################################
+ #                                                                                                  #
+ #                        Unpacking the Dictionary values into the function!                        #
+ #                                                                                                  #
+ ####################################################################################################
+
+
+
+def total_knuts(galleons, sickles, knuts):
+	return (galleons *17 + sickles) *29 + knuts
+
+
+my_dict = {'galleons': 100, 'sickles': 50, 'knuts': 25} # same order
+print(*my_dict) # same as for my_dict2 -> getting you the dict keys
+# galleons sickles knuts
+
+
+print(total_knuts(**my_dict)) # for unpacking the dictionary values (by keys) into the function (note that order can be shuffled...)
+# 50775
+
+
+
+
+
+
+my_dict = {'sickles': 50, 'galleons': 100, 'knuts': 25} # shuffled order
+print(total_knuts(**my_dict)) # and the result remains the same (the robust way to do it!)
+# 50775
+
+# same as passing the entire syntax:
+print(total_knuts(galleons = 100, sickles = 50, knuts = 25)) # and the result remains the same (the robust way to do it!)
+# 50775
 
 
 

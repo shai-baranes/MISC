@@ -179,3 +179,28 @@ while (food := input("Again, what food do you like? ('q' to quit): ")).lower() !
 
 
 # --------------------#############-----------------
+
+
+# Additional examples for list/dict comprehensions (taken from Harvard CS50):
+
+
+# dict comprehension:
+students = ["Hermione", "Harry", "Ron"]
+
+gryffindors = {student: "Gryffindor" for student in students}
+
+print(gryffindors)
+# {'Hermione': 'Gryffindor', 'Harry': 'Gryffindor', 'Ron': 'Gryffindor'}
+
+
+
+
+# creating a list of dicts using list comprehension:
+students = ["Hermione", "Harry", "Ron", "Draco"]
+houses = ["Gryffindor", "Gryffindor", "Gryffindor", "Slytherin"]
+
+list_of_students = [{"name": student, "house": house} for student, house in zip(students, houses)]
+
+print(list_of_students)
+# [{'name': 'Hermione', 'house': 'Gryffindor'}, {'name': 'Harry', 'house': 'Gryffindor'}, {'name': 'Ron', 'house': 'Gryffindor'}, {'name': 'Draco', 'house': 'Slytherin'}]
+

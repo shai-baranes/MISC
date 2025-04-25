@@ -385,3 +385,119 @@ word = functools.reduce(lambda x, y: x+y, letters)
 numbers = [1,2,3,4,5]
 factorial = functools.reduce(lambda x, y: x*y, numbers)
 # factorial = 120
+
+
+
+
+
+
+ ####################################################################################################
+ #                                                                                                  #
+ #                           Maps, Filters and Lambdas on Hogwarts (CS50):                          #
+ #                                                                                                  #
+ ####################################################################################################
+
+
+
+# more examples by Harvard CS50 course, URL: https://www.youtube.com/watch?v=nLRL_NcnK-4&t=54414s
+
+
+# I want to yell with all words in upper case:
+def yell(words: list) -> None: 
+	uppercased = map(str.upper, words)
+	print(*uppercased)
+
+yell(["This","is","CS50"])
+# THIS IS CS50
+
+def yell2(words: list) -> None: 
+	print(*[word.upper() for word in words])
+
+
+yell2(["This","is","Another","example", "using", "list", "comprehension"])
+# THIS IS ANOTHER EXAMPLE USING LIST COMPREHENSION
+
+
+
+
+students = [
+	{"name": "Hermione", "house": "Gryffindor"},
+	{"name": "Harry", "house": "Gryffindor"},
+	{"name": "Ron", "house": "Gryffindor"},
+	{"name": "Draco", "house": "Slytherin"},
+]
+
+Gryffindors = [
+	student["name"] for student in students if student["house"] == "Gryffindor"
+]
+
+
+
+print(Gryffindors)
+# ['Hermione', 'Harry', 'Ron']
+
+
+def is_gryffindor(s):
+	return s["house"] == "Gryffindor"
+
+gryffindors = filter(is_gryffindor, students)
+# gryffindors = filter(lambda s: s["house"] == "Gryffindor", students) # same as this one
+
+
+for item in gryffindors:
+	print(item["name"])
+
+# Hermione
+# Harry
+# Ron
+
+# now sorted by name:
+for item in sorted(gryffindors, key=lambda s: s["name"]):
+	print(item["name"])
+
+
+
+
+
+
+ ####################################################################################################
+ #                                                                                                  #
+ #                                  'List'/ 'Dict' Comprehensions:                                  #
+ #                                                                                                  #
+ ####################################################################################################
+# still from Harvard CS50:
+
+
+
+
+
+# creating a list of dicts using list comprehension:
+students = ["Hermione", "Harry", "Ron"]
+
+gryffindors = [{"name": student, "house": "Gryffindor"} for student in students]
+
+print(gryffindors)
+# [{'name': 'Hermione', 'house': 'Gryffindor'}, {'name': 'Harry', 'house': 'Gryffindor'}, {'name': 'Ron', 'house': 'Gryffindor'}]
+
+
+
+# dict comprehension:
+students = ["Hermione", "Harry", "Ron"]
+
+gryffindors = {student: "Gryffindor" for student in students}
+
+print(gryffindors)
+# {'Hermione': 'Gryffindor', 'Harry': 'Gryffindor', 'Ron': 'Gryffindor'}
+
+
+
+
+# creating a list of dicts using list comprehension:
+students = ["Hermione", "Harry", "Ron", "Draco"]
+houses = ["Gryffindor", "Gryffindor", "Gryffindor", "Slytherin"]
+
+list_of_students = [{"name": student, "house": house} for student, house in zip(students, houses)]
+
+print(list_of_students)
+# [{'name': 'Hermione', 'house': 'Gryffindor'}, {'name': 'Harry', 'house': 'Gryffindor'}, {'name': 'Ron', 'house': 'Gryffindor'}, {'name': 'Draco', 'house': 'Slytherin'}]
+
