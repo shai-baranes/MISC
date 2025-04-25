@@ -5,10 +5,18 @@
 # Class methods = Best for class-level data or require access to the class itself (@classmethod)
 
 
+# def header_creator(text):
+# 	print(" ", "#"*100, "\n", " #", " "*int((95-len(text))/2), text, " "*int((94-len(text))/2), "#", "\n", "", "#"*100)
+
 def header_creator(text):
-	print(" ", "#"*100, "\n", " #", " "*int((95-len(text))/2), text, " "*int((94-len(text))/2), "#", "\n", "", "#"*100)
+	print(f" {'#'*100}")	
+	print(" #", " "*96, "#")
+	print(" #", " "*int((95-len(text))/2), text, " "*int((94-len(text))/2), "#")
+	print(" #", " "*96, "#")
+	print("", "#"*100)
 
 
+# header_creator("Operator Overloading: __add__ (& returning a Class)")
 
 
 
@@ -199,7 +207,38 @@ finally:
 
 
 
+ ####################################################################################################
+ #                                                                                                  #
+ #                        Operator Overloading: __add__ (& returning a Class)                       #
+ #                                                                                                  #
+ ####################################################################################################
+
+print()
+class Vault:
+
+	def __init__(self, galleons=0, sickles=0, knuts=0):
+		self.galleons = galleons
+		self.sickles = sickles
+		self.knuts = knuts
+
+	def __str__(self):
+		return f"{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} Knuts"
+
+
+	def calc_knuts(self):
+		return (self.galleons + (self.sickles+ self.knuts*10)*10) * 10
+
+
+	def __add__(self, other):
+		return Vault(self.galleons + other.galleons, self.sickles + other.sickles, self.knuts + other.knuts)
 
 
 
+potter = Vault(100, 50, 25)
+print(potter)
 
+weasley = Vault(25, 50, 100)
+print(weasley)
+
+
+new_vault = potter+weasley
