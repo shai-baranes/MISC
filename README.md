@@ -11,8 +11,8 @@
 > 	print("", "#"*100)
 >
 
-### Example:
-	> header_creator("Arguments Parser:")
+### 	Example:
+		> header_creator("Arguments Parser:")
 
 
 ## 'black' module:
