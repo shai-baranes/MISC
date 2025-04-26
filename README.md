@@ -11,7 +11,7 @@
 > 	print("", "#"*100)
 >
 
-## Example:
+### Example:
 	> header_creator("Arguments Parser:")
 
 
@@ -34,4 +34,3 @@
 
 ## Abbreviation:
 	'README.md' -> md for Markdown
-	
