@@ -102,7 +102,7 @@ finally:
     print(obj.lastname) # last stored object
 
 
-[print(f"First = {user.firstname}, Last = {user.lastname}, Age = {user.age}") for user in users1]First = Shai, Last = Baranes, Age = 51
+[print(f"First = {user.firstname}, Last = {user.lastname}, Age = {user.age}") for user in users1]
 # First = Hadas, Last = Golan, Age = 48
 # First = Jimi, Last = Cohen, Age = 8
 # [None, None, None]

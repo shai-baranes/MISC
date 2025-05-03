@@ -22,14 +22,23 @@
 
 ## Useful doc command prompt:
 
+ - tree     (nice tree representation of all folders/sub folders, hidden exclusive)
  - dir /ad  (list only directories)
  - dir /b /ad  (a bare '/b' presentation of directories without the noised columns)
  - dir /b /a-d (list only files - excluding directories, hence the "-")
  - tasklist | findstr "python (find all currently running python processes)
  - taskkill /IM python.exe /F (forcefully and immediately killing all active python processes)
  - dir /s /b | findstr /i lambda (finding all files/paths incorporating the "lambda" text, case insensitive '/i' - can be passed into a file)
+ - type filename (read the file content - the equivalent to cat/touch in Unix)
+ - [Current Working Directory] in python runtime: import os; os.getcwd()
+
+ - pip install --force-reinstall -v "openpyxl==3.0.10" (maybe pip install troubleshooting?)
 
 
+## My most useful GIT commands:
+
+ - git config --get-regexp ^alias (check on your pre-configured aliases)
+ -- [more tips from:] https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s
 
 
 ## Abbreviation:

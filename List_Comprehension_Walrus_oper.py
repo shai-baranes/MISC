@@ -127,6 +127,8 @@ new_arr = [1,2,-1,-2]
 
 if any(n>1 for n in new_arr):
 	print("the array has number > 1")
+# the array has number > 1
+
 
 # --
 
@@ -134,6 +136,8 @@ if all(n>1 for n in new_arr):
 	print("all array elements are > 1")
 else:
 	print("not all array elements are > 1")
+# not all array elements are > 1
+
 
 
 
@@ -203,4 +207,13 @@ list_of_students = [{"name": student, "house": house} for student, house in zip(
 
 print(list_of_students)
 # [{'name': 'Hermione', 'house': 'Gryffindor'}, {'name': 'Harry', 'house': 'Gryffindor'}, {'name': 'Ron', 'house': 'Gryffindor'}, {'name': 'Draco', 'house': 'Slytherin'}]
+
+
+dict1 = {'Hermione': 'Gryffindor', 'Harry': 'Gryffindor'}
+dict2 = {'Hermione': 'Gryffindor', 'Ron': 'Gryffindor'}
+dict3 = {'Harry': 'Gryffindor', 'Ron': 'Gryffindor'}
+
+gryffindors = {**dict1,** dict2,** dict3} # for combining dicts together and emit duplication if such exists
+print(gryffindors) 
+# {'Hermione': 'Gryffindor', 'Harry': 'Gryffindor', 'Ron': 'Gryffindor'}
 

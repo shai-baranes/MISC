@@ -159,9 +159,6 @@ print({name: coin for name, coin in zip(names,  coins)})
 # {'galleons': 100, 'sickles': 50, 'knuts': 25}
 
 
-too many values to unpack (expected 2)
-
-
  ####################################################################################################
  #                                                                                                  #
  #                        Unpacking the Dictionary values into the function!                        #
@@ -196,4 +193,12 @@ print(total_knuts(galleons = 100, sickles = 50, knuts = 25)) # and the result re
 # 50775
 
 
+# from python tricks book:
+dict1 = {'Hermione': 'Gryffindor', 'Harry': 'Gryffindor'}
+dict2 = {'Hermione': 'Gryffindor', 'Ron': 'Gryffindor'}
+dict3 = {'Harry': 'Gryffindor', 'Ron': 'Gryffindor'}
+
+gryffindors = {**dict1,** dict2,** dict3} # for combining dicts together and emit duplication if such exists
+print(gryffindors) 
+# {'Hermione': 'Gryffindor', 'Harry': 'Gryffindor', 'Ron': 'Gryffindor'}
 
