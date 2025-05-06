@@ -10,6 +10,7 @@
 
 from datetime import datetime
 import time
+from timeit import default_timer as timer # another way to time the elapsed seconds as depicted below
 
 
 ################defining the decorators
@@ -19,6 +20,15 @@ def time_it(func):
 		t=datetime.now()
 		func()
 		print(f"{(datetime.now()-t).total_seconds()} seconds elapsed!")
+	return wrapper
+
+
+
+def time_it2(func):
+	def wrapper():  #note that w/o adding kwargs to the wrapper, we only support functions that have no arguments
+		t=timer()
+		func()
+		print(f"{(timer()-t)} seconds elapsed!")
 	return wrapper
 
 
@@ -35,12 +45,21 @@ def add_sprinkles(func):
 
 @time_it # we can have multiple decorators here
 @add_sprinkles # note that w/o the wrapper, we're calling the function as soon as python sees this @func_name decorator
-def get_ice_cream():
+def get_ice_cream_1():
 	time.sleep(1)
 	print("Here is your ice cream 🍧")
 
+@time_it2 # we can have multiple decorators here
+def get_ice_cream_2():
+	time.sleep(2)
+	print("Here is your 2nd ice cream 🍧")
 
-get_ice_cream()
+
+
+
+get_ice_cream_1()
+print()
+get_ice_cream_2()
 print()
 
 # *You add sprinkles 🎊*
@@ -69,3 +88,9 @@ get_ice_cream_2("Vanilla")
 # *You add sprinkles 🎊*
 # Here is your Vanilla ice cream 🍧
 # *sprinkles are added 🎊*
+
+
+# --------------------------------------------------------
+
+
+# another way to time it

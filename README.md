@@ -20,7 +20,7 @@
 > note that I had to pip install it.
 
 
-## Useful doc command prompt:
+## Useful DOS command prompt:
 
  - tree     (nice tree representation of all folders/sub folders, hidden exclusive)
  - dir /ad  (list only directories)
@@ -32,7 +32,13 @@
  - type filename (read the file content - the equivalent to cat/touch in Unix)
  - [Current Working Directory] in python runtime: import os; os.getcwd()
 
+
+## pip/venv related (new to me; note that UV does it better!):
  - pip install --force-reinstall -v "openpyxl==3.0.10" (maybe pip install troubleshooting?)
+ - pip freeze > requirements.txt		# get snapshot of all currently installed python packages along with dependencies
+ - pip install -r requirements.txt      # to be later installed by someone else or other env
+ - python -m venv .venv					# the convention for naming your virtual environment
+ - 
 
 
 ## My most useful GIT commands:

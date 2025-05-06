@@ -37,9 +37,30 @@ def is_weekend2(day):
 		return False
 
 
+
+# also supporting tuples comparison
+def match_fruit_color(fruit, color):
+	match (fruit.lower(), color.lower()):
+		case ("apple", "red") | ("apple", "green"):
+			return f"You have an apple!"
+		case ("banana", "yellow") | ("banana", "green"):
+			return "You have a banana!"
+		case ("banana", "purple"):
+			return "You have a purple banana! How odd!"
+		case ("banana", _):
+			return "You have a weired banana!"
+		case _:
+			return "Are you sure about that?"
+
+
+
+
+
+
+
 def main():
 	print(is_weekend("Sunday"))
-
+	print(match_fruit_color("banana", "purple"))
 
 
 

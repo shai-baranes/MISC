@@ -1,0 +1,32 @@
+UV is the new framework to replace both pip & venv (and does is much quicker and more efficient)
+
+install page:
+	https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_2
+
+
+UV Basics (from CMD shall):
+*note that Sublime 'Terminus' is not aware of these UV commands
+	> 'uv init' 			# works after installing UV from powershall (initiates: '.gitignore',  'pyproject.toml', '.python-version' and more ...)
+
+	> 'uv init new_app'	# creates a new folder and initialize it as in above step
+	> 'uv run main.py'    # any local execution shall establish the virtual environment if not already exists
+	> 'uv add [package]'	# replaces the 'pip install [package]' along with its extended functionality (can concatenate multiple packages by space between).
+	* dependencies: 'requirements.txt' file is no longer relevant (any dependencies and sub-dependencies are automatically directed into the 'pyproject.toml' & 'uv.lock' respectively)
+
+	> 'uv'				# help; you get a list of all possible uv commands.
+	> 'uv tree'			# displays a tree of all dependencies
+	> 'uv pip list'		# organized dependencies in list instead of tree
+	> 'uv remove [package]'	# uninstalling a package (and update the associated files).
+	> 'uv sync'			# creating a virtual environment (if missing) from 'pyproject.toml' & 'uv.lock' files.
+	> uv add -r requirements.txt_data# to import requirements from an old project to be migrated to the uv way.
+
+
+## extra:
+- run (python env): '> import sys' => '> print(sys.executable)' # to check what is your current active venv
+- run (cmd terminal): '> deactivate'								# to deactivate your 'active' venv python
+- run (cmd terminal): '> where ruff'								# we need to understand how to work with this ruff linter for python!
+
+
+
+
+TBD check if sublime can support auto-select of opened folder with existing virtual environment!

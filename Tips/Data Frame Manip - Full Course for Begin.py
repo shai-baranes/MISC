@@ -3,6 +3,9 @@ https://www.youtube.com/watch?v=r-uOLxNrNk8&t=237s
 
 https://pandas.pydata.org/docs/reference/api/
 
+my google sheet link:
+https://docs.google.com/document/d/1CBWE7vvQ-PXCAtkxuC4BG0Jw6XlFSdjBF6JCw-4VSyE/edit?usp=sharing
+
 # pd.set_option('display.max_rows', None) # in such case, df.head() -> retrieves the entire list (maybe need to add; df.head(5) )
 # pd.set_option('display.max_rows', 0) # (either rows or columns -  to revert)
 
