@@ -26,16 +26,22 @@
  - dir /ad  (list only directories)
  - dir /b /ad  (a bare '/b' presentation of directories without the noised columns)
  - dir /b /a-d (list only files - excluding directories, hence the "-")
+ - dir /o-d  (sorted 'order' by 'date' (-) reversed)
  - tasklist | findstr "python (find all currently running python processes)
  - taskkill /IM python.exe /F (forcefully and immediately killing all active python processes)
  - dir /s /b | findstr /i lambda (finding all files/paths incorporating the "lambda" text, case insensitive '/i' - can be passed into a file)
+ - dir /s /b | findstr /i "import pandas as pd" (finding all files/paths incorporating the "lambda" text, case insensitive '/i' - can be passed into a file)
  - type filename (read the file content - the equivalent to cat/touch in Unix)
- - [Current Working Directory] in python runtime: import os; os.getcwd()
+ - explorer .  (opens the file browser deirectly from where you are in your CMD console directory)
+ - curl "https://api.cryptowat.ch/markets/kraken/btceur/price"  (get status/response on web API)
+ - python -m notebook (open python notebook from the local repository)
+ - [Current Working Directory] in python runtime: import os; os.getcwd() # helps to see what python environment (or .venv) you're in...
 
 
 ## pip/venv related (new to me; note that UV does it better!):
  - pip install --force-reinstall -v "openpyxl==3.0.10" (maybe pip install troubleshooting?)
  - pip freeze > requirements.txt		# get snapshot of all currently installed python packages along with dependencies
+ - pip show package_name				# getting the specific version of the currently installed package
  - pip install -r requirements.txt      # to be later installed by someone else or other env
  - python -m venv .venv					# the convention for naming your virtual environment
  - 

@@ -18,7 +18,7 @@ UV Basics (from CMD shall):
 	> 'uv pip list'		# organized dependencies in list instead of tree
 	> 'uv remove [package]'	# uninstalling a package (and update the associated files).
 	> 'uv sync'			# creating a virtual environment (if missing) from 'pyproject.toml' & 'uv.lock' files.
-	> uv add -r requirements.txt_data# to import requirements from an old project to be migrated to the uv way.
+	>  uv add -r requirements.txt    # to import requirements from an old project to be migrated to the uv way.
 
 
 ## extra:

@@ -1,0 +1,16 @@
+Sublime tip for indentation errors:
+
+To avoid the "TabError: inconsistent use of tabs and spaces in indentation" when copying Python code into Sublime Text, follow these steps:
+
+- In Sublime Text, set your indentation preferences to use spaces (recommended by PEP 8):  
+  Go to **Preferences → Settings** and add:  
+  `"tab_size": 4, "translate_tabs_to_spaces": true`[1][3][6].
+- Before running your code, convert all indentation in the file to spaces:  
+  - Click the **Tab Size** indicator at the bottom right of the window and select **Convert Indentation to Spaces**[1][2][5][6].
+- Make whitespace visible to spot inconsistencies:  
+  - Set `"draw_white_space": "all"` in your settings[1][2][5].
+- For existing code, you can also select all lines (`Ctrl+A`) and use the command palette (`Ctrl+Shift+P`) to search for and run **Reindent Lines** or **Convert Indentation to Spaces**[1][3][5].
+
+This ensures consistent indentation and prevents such errors, especially when copying code between editors[1][5][6].
+
+Answer from Perplexity: pplx.ai/share
