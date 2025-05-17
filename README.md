@@ -35,7 +35,6 @@
  - explorer .  (opens the file browser deirectly from where you are in your CMD console directory)
  - curl "https://api.cryptowat.ch/markets/kraken/btceur/price"  (get status/response on web API)
  - python -m notebook (open python notebook from the local repository)
- - [Current Working Directory] in python runtime: import os; os.getcwd() # helps to see what python environment (or .venv) you're in...
 
 
 ## pip/venv related (new to me; note that UV does it better!):
@@ -43,8 +42,18 @@
  - pip freeze > requirements.txt		# get snapshot of all currently installed python packages along with dependencies
  - pip show package_name				# getting the specific version of the currently installed package
  - pip install -r requirements.txt      # to be later installed by someone else or other env
- - python -m venv .venv					# the convention for naming your virtual environment
- - 
+ - python -m venv .venv					# the convention for naming your virtual environment (not needed when using the 'uv' framework)
+
+## Extras
+ - [Current Working Directory] in python runtime: import os; os.getcwd() # helps to see what python environment (or .venv) you're in...
+ - [Sublime] search excluding folders: add '-' (minus sign) and folders to be exluded under 'Where', e.g. -*/venv/, -*/myvenv/, -*/.env/, 
+ - python -m notebook (open python notebook from the local repository) 
+ - sns.scatterplot.__doc__ (adding doc helps in getting the docstring of a function)
+ - import inspect; inspect.signature(sns.scatterplot)   --> (this bring the function signature and we see their agrs and their defaults)
+ 
+
+
+
 
 
 ## My most useful GIT commands:
