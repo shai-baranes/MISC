@@ -8,6 +8,8 @@ https://docs.google.com/document/d/1CBWE7vvQ-PXCAtkxuC4BG0Jw6XlFSdjBF6JCw-4VSyE/
 
 pd.set_option('display.max_rows', None) # in such case, df.head() -> retrieves the entire list (maybe need to add; df.head(5) )
 pd.set_option('display.max_rows', 0) # (either rows or columns -  to revert)
+tbd pd.set_option('max_columns', 200) ?
+
 
 basic funcs to get acquaintet with your df:
 	df.info() # object type and non-empty cells count per column

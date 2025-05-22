@@ -35,6 +35,7 @@
  - explorer .  (opens the file browser deirectly from where you are in your CMD console directory)
  - curl "https://api.cryptowat.ch/markets/kraken/btceur/price"  (get status/response on web API)
  - python -m notebook (open python notebook from the local repository)
+ - [Windows key+R] -> type: "control access.cpl" (you'll get quick access to change mouse behavior, e.g. activation upon mouse hovering)
 
 
 ## pip/venv related (new to me; note that UV does it better!):
@@ -44,14 +45,17 @@
  - pip install -r requirements.txt      # to be later installed by someone else or other env
  - python -m venv .venv					# the convention for naming your virtual environment (not needed when using the 'uv' framework)
 
+
 ## Extras
- - [Current Working Directory] in python runtime: import os; os.getcwd() # helps to see what python environment (or .venv) you're in...
- - [Sublime] search excluding folders: add '-' (minus sign) and folders to be exluded under 'Where', e.g. -*/venv/, -*/myvenv/, -*/.env/, 
+ - [Current Working Directory] in python runtime: import os; os.getcwd() # helps to see what is the current working dir of the script
+ - [Current Working Directory] in python runtime: import sys; sys.executable # helps to see what python environment (or .venv) you're in...
+ - [Sublime] search excluding folders: add '-' (minus sign) and folders to be excluded under 'Where', e.g. -*/venv/, -*/myvenv/, -*/.env/, 
  - python -m notebook (open python notebook from the local repository) 
  - sns.scatterplot.__doc__ (adding doc helps in getting the docstring of a function)
- - import inspect; inspect.signature(sns.scatterplot)   --> (this bring the function signature and we see their agrs and their defaults)
- 
-
+ - import inspect; inspect.signature(func)   --> (this bring the function signature and we see their agrs and their defaults)
+ - [Python Debug Mode] 'next', 'continue' (known), 'return' (step-out of the function) ↩️, 'h' (for help), 'h continue' (help on 'continue')
+ - [Microsoft Emoji] 'Window KEY' + '.'
+ - [executable from your python script]: https://www.youtube.com/watch?v=bqNvkAfTvIc (Indently Channel)
 
 
 
@@ -59,7 +63,7 @@
 ## My most useful GIT commands:
 
  - git config --get-regexp ^alias (check on your pre-configured aliases)
- -- [more tips from:] https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s
+ 	- [more tips from]: https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s
 
 
 ## Abbreviation:
