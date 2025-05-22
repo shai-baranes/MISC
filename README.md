@@ -55,7 +55,7 @@
  - import inspect; inspect.signature(func)   --> (this bring the function signature and we see their agrs and their defaults)
  - [Python Debug Mode] 'next', 'continue' (known), 'return' (step-out of the function) ↩️, 'h' (for help), 'h continue' (help on 'continue')
  - [Microsoft Emoji] 'Window KEY' + '.'
- - [executable from your python script]: https://www.youtube.com/watch?v=bqNvkAfTvIc (Indently Channel)
+ - Create single-file executable: [Indently Vid](https://www.youtube.com/watch?v=bqNvkAfTvIc)
 
 
 
@@ -63,8 +63,17 @@
 ## My most useful GIT commands:
 
  - git config --get-regexp ^alias (check on your pre-configured aliases)
- 	- [more tips from]: https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s
+ 	- [YouTube: More Tips](https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s)
 
 
 ## Abbreviation:
 	'README.md' -> md for Markdown
+
+
+<!-- 
+tqdm video (by Rob Mulla): [link](https://youtu.be/n4E7of9BINo?si=1k08sSs6r5TSc8sR) <br/>
+rich video (by Patrick Loeber): [link](https://youtu.be/4zbehnz-8QU?si=4v5SZBaUUiMwjgCX) <br/>
+pathlib video (by Corey Schafer): [link](https://youtu.be/yxa-DJuuTBI?si=i8IFn6TvxdcgC-D3) <br/>
+pydantic video (by Pixegami): [link](https://youtu.be/XIdQ6gO3Anc?si=CLa1FS71EdaRZsRa) <br/>
+ruff video (Pycon presentation): [link](https://youtu.be/r1EZ3GXuwBA?si=iBppFwvVI6z9oniL)
+ -->
