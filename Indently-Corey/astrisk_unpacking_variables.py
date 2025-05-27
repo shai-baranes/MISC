@@ -1,5 +1,7 @@
 # unpacking a Tuple!
 
+
+
 people: tuple[str, ...] = ('firstPerson', 'secondPerson', 'Bob', 'Ben', 'second2lastPerson', 'lastPerson')
 # people = ['firstPerson', 'secondPerson', 'Bob', 'Ben', 'second2lastPerson', 'lastPerson'] # both work
 
@@ -23,4 +25,33 @@ print(f'{first=} {second=} {near_last=} {last=}')
 print(f'{_=}')
 # _=['Bob', 'Ben']
 
+
+
+
+# ================================
+
+
+# how to avoid exceptions upon reading from dictionary and to avoid rewriting values if key already in dict!
+
+my_dict = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5,}  # noqa: F821
+
+for char in ["a", "b", "c", "d", "e","f"]:
+    print(my_dict.get(char)) # we get 'None' for "f" instead of exception!
+
+
+my_dict.setdefault("a")
+# {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5,}
+
+my_dict.setdefault("f")
+# {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': None}
+
+my_dict.setdefault("a", 20)
+# {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': None}
+
+my_dict.setdefault("g", 20)
+# {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': None, 'g': 20}
+
+
+def main() -> None:
+    print(f"this is {my_dict.get("a")}")
 
