@@ -37,6 +37,8 @@
  - python -m notebook (open python notebook from the local repository)
  - [Windows key+R] -> type: "control access.cpl" (you'll get quick access to change mouse behavior, e.g. activation upon mouse hovering)
  - [F7] keyboard key (like unix history, get the list of user prompts to the console - and you can toggle between prompts using the arrows)
+ - echo hello world > tmp.txt (create a file with the text "hello world" in it)
+ - echo sinderela >> tmp.txt (append the text "sinderela" to the end of the file tmp.txt. note that w/o the >> it replaces the existing content)
 
 
 ## pip/venv related (new to me; note that UV does it better!):
