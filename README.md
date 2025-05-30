@@ -20,7 +20,7 @@
 > note that I had to pip install it.
 
 
-## Useful DOS command prompt:
+## Useful DOS command line prompt (bash equivalent):
 
  - tree     (nice tree representation of all folders/sub folders, hidden exclusive)
  - dir /ad  (list only directories)
@@ -39,6 +39,7 @@
  - [F7] keyboard key (like unix history, get the list of user prompts to the console - and you can toggle between prompts using the arrows)
  - echo hello world > tmp.txt (create a file with the text "hello world" in it)
  - echo sinderela >> tmp.txt (append the text "sinderela" to the end of the file tmp.txt. note that w/o the >> it replaces the existing content)
+ - type tmp.txt (read the content of the file tmp.txt; equivalent to 'cat' in Unix)
 
 
 ## pip/venv related (new to me; note that UV does it better!):

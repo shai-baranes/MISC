@@ -194,3 +194,34 @@ pprint(inspect.getmembers(Comment, inspect.isfunction))  # list all functions in
 
 
 
+import inspect  # noqa: E402
+from pprint import pprint  # noqa: E402
+from dataclasses import dataclass, asdict, astuple, field  # noqa: E402
+
+@dataclass(frozen=True, slots=True, order=True)  # frozen=True makes it immutable, slots=True saves memory, order=True allows comparison based on the order of attributes
+class Comment:
+    id: int
+    text: str
+    # text: str = field(default="") # above is same as this
+    replies: list[str] = field(default_factory=list, compare=False, repr=False)  # replies will not be considered in comparison; repr=False means that this field will not be included in the string representation of the class instance
+
+comment = Comment(1, "I just subscribed!", ["Thanks!", "Welcome!"])
+print(astuple(comment)) # (1, 'I just subscribed!', ['Thanks!', 'Welcome!'])
+print(asdict(comment)) # {'id': 1, 'text': 'I just subscribed!', 'replies': ['Thanks!', 'Welcome!']}
+pprint(inspect.getmembers(Comment, inspect.isfunction))  # list all functions in the class (thanks for using the dataclass decorator)
+
+# Output:
+# (1, 'I just subscribed!', ['Thanks!', 'Welcome!'])
+# {'id': 1, 'text': 'I just subscribed!', 'replies': ['Thanks!', 'Welcome!']}
+# [('__delattr__', <function Comment.__delattr__ at 0x0000023888EC4680>),
+#  ('__eq__', <function Comment.__eq__ at 0x0000023888EC42C0>),
+#  ('__ge__', <function Comment.__ge__ at 0x0000023888EC4540>),
+#  ('__getstate__', <function _dataclass_getstate at 0x0000023888EC1F80>),
+#  ('__gt__', <function Comment.__gt__ at 0x0000023888EC44A0>),
+#  ('__hash__', <function Comment.__hash__ at 0x0000023888EC4720>),
+#  ('__init__', <function Comment.__init__ at 0x0000023888E6F4C0>),
+#  ('__le__', <function Comment.__le__ at 0x0000023888EC4400>),
+#  ('__lt__', <function Comment.__lt__ at 0x0000023888EC4360>),
+#  ('__repr__', <function Comment.__repr__ at 0x0000023888EC4220>),
+#  ('__setattr__', <function Comment.__setattr__ at 0x0000023888EC45E0>),
+#  ('__setstate__', <function _dataclass_setstate at 0x0000023888EC2020>)]
