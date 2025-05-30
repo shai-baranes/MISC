@@ -114,6 +114,52 @@ except Exception as e:
 # note that there's a bug in the debug printout
 
 
+import inspect  # noqa: E402
+from pprint import pprint  # noqa: E402
+pprint(inspect.getmembers(Values, inspect.isfunction)) # list all functions in the class (thanks for using the pydantic 'BaseModel' decorator)
+# [('__copy__', <function BaseModel.__copy__ at 0x0000025CE6074A40>),
+#  ('__deepcopy__', <function BaseModel.__deepcopy__ at 0x0000025CE6074AE0>),
+#  ('__delattr__', <function BaseModel.__delattr__ at 0x0000025CE6074D60>),
+#  ('__eq__', <function BaseModel.__eq__ at 0x0000025CE6074FE0>),
+#  ('__getattr__', <function BaseModel.__getattr__ at 0x0000025CE6074B80>),
+#  ('__getstate__', <function BaseModel.__getstate__ at 0x0000025CE6074EA0>),
+#  ('__init__', <function BaseModel.__init__ at 0x0000025CE6073D80>),
+#  ('__iter__', <function BaseModel.__iter__ at 0x0000025CE6075080>),
+#  ('__pretty__', <function Representation.__pretty__ at 0x0000025CE5E7E5C0>),
+#  ('__replace__', <function BaseModel.__replace__ at 0x0000025CE6074E00>),
+#  ('__repr__', <function BaseModel.__repr__ at 0x0000025CE6075120>),
+#  ('__repr_args__', <function BaseModel.__repr_args__ at 0x0000025CE60751C0>),
+#  ('__repr_name__',
+#   <function Representation.__repr_name__ at 0x0000025CE5E7E3E0>),
+#  ('__repr_recursion__',
+#   <function Representation.__repr_recursion__ at 0x0000025CE5E7E480>),
+#  ('__repr_str__', <function Representation.__repr_str__ at 0x0000025CE5E7E520>),
+#  ('__rich_repr__',
+#   <function Representation.__rich_repr__ at 0x0000025CE5E7E660>),
+#  ('__setattr__', <function BaseModel.__setattr__ at 0x0000025CE6074C20>),
+#  ('__setstate__', <function BaseModel.__setstate__ at 0x0000025CE6074F40>),
+#  ('__str__', <function BaseModel.__str__ at 0x0000025CE6075260>),
+#  ('_calculate_keys',
+#   <function BaseModel._calculate_keys at 0x0000025CE6075DA0>),
+#  ('_copy_and_set_values',
+#   <function BaseModel._copy_and_set_values at 0x0000025CE6075C60>),
+#  ('_iter', <function BaseModel._iter at 0x0000025CE6075BC0>),
+#  ('_setattr_handler',
+#   <function BaseModel._setattr_handler at 0x0000025CE6074CC0>),
+#  ('copy', <function BaseModel.copy at 0x0000025CE60758A0>),
+#  ('dict', <function BaseModel.dict at 0x0000025CE6075440>),
+#  ('json', <function BaseModel.json at 0x0000025CE60754E0>),
+#  ('model_copy', <function BaseModel.model_copy at 0x0000025CE6074180>),
+#  ('model_dump', <function BaseModel.model_dump at 0x0000025CE6074220>),
+#  ('model_dump_json',
+#   <function BaseModel.model_dump_json at 0x0000025CE60742C0>),
+#  ('model_post_init',
+#   <function BaseModel.model_post_init at 0x0000025CE60744A0>)]
+
+
+
+
+
 # =============================
 # dataclass build-in alternative
 # =============================

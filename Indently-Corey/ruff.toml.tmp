@@ -1,0 +1,18 @@
+[lint]
+extend-select = ["E501", "E502", "E503", "N", "R", "I"]
+
+
+
+#extend-select = [
+#    "I001",  # Indentation error
+#    "I002",  # Unused import
+#    "I003",  # Unused variable
+#    "I004",  # Unused function
+#    "I005",  # Unused class
+#    "E501",  # Syntax error
+#    "E502",  # Indentation error
+#    "E503",  # Trailing whitespace
+#    "N", # Naming conventions
+#    "R", # Refactoring suggestions
+#    "I", # Imports management
+#]

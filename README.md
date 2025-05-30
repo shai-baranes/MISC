@@ -55,13 +55,37 @@
  - [Sublime] search excluding folders: add '-' (minus sign) and folders to be excluded under 'Where', e.g. -*/venv/, -*/myvenv/, -*/.env/, 
  - python -m notebook (open python notebook from the local repository) 
  - sns.scatterplot.__doc__ (adding doc helps in getting the docstring of a function)
- - import inspect; inspect.signature(func)   --> (this bring the function signature and we see their agrs and their defaults)
- 	- you can also get it by: func.__text_signature__   (maybe not true for all inner functios, where the inspect might help much better!)
+ - [python] import inspect; inspect.signature(func)   --> (this bring the function signature and we see their agrs and their defaults)
+ 	- you may also get it by: func.__text_signature__   (maybe not true for all inner functios, where the inspect might help much better!)
+ - [python] inspect.getmembers(<Class/Func>, inspect.isfunction) --> this will return all functions of the class or module, and you can filter them by their names, e.g.:
+ - [python] from pprint import pprint --> use pprint for readability of the above output
+ - [python] inspect.getmembers(<Class/Func>, lambda x: inspect.isfunction(x) and x.__name__.startswith('get_'))
  - [Python Debug Mode] 'next', 'continue' (known), 'return' (step-out of the function) ↩️, 'h' (for help), 'h continue' (help on 'continue')
- - [Microsoft Emoji] 'Window KEY' + '.'
+ - [Windows Emoji] 'Window KEY' + '.'
  - Create single-file executable: [Indently Vid](https://www.youtube.com/watch?v=bqNvkAfTvIc)
+ - my general ruff configutayion file sits under: 'C:\Users\shaib\AppData\Roaming\ruff\pyproject.toml' (with some added features)
+ - from cmd: >> ruff check --show-settings (to see all settings, under: linter.rules.enabled)
+ - can also filter rules by cmd: >> ruff check --show-settings | findstr "(\*)"  # tbd without the "\"
+ - [Windows] 'Ctrl+Shift+Esc' (to open the task manager directly)
+ - [Sublime] 'Ctrl+Alt+/' ("Beyond Compare" diff tool package)
+ - [Sublime] 'F10' (quick file name search w/ regex)
 
 
+
+## My most useful VIM commands:
+ - [linux vim] ':set nu' (to show line numbers)
+ - [linux vim] ':set nonu' (to hide line numbers)
+ - [linux vim] ':set list' (to show hidden characters like spaces, tabs, etc.)
+ - [linux vim] ':set nolist' (to hide the hidden characters)
+ - [linux vim] 'dd' (to delete the current line)
+ - [linux vim] 'yy' (to copy the current line)
+ - [linux vim] 'p' (to paste the copied line below the current line)
+ - [linux vim] 'P' (to paste the copied line above the current line)
+ - [linux vim] 'u' (to undo the last change)
+ - [linux vim] 'Ctrl+r' (to redo the last change)
+ - [linux vim] ':wq' (to save and exit the file)
+ - [linux vim] ':q!' (to exit the file without saving)
+ - [linux vim] ':e filename' (to edit a file)
 
 
 ## My most useful GIT commands:

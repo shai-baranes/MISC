@@ -1,0 +1,6 @@
+[tool.ruff.lint]
+extend-select = ["R", "N", "I"]
+#extend-select = ["E501", "E502", "E503", "N", "R", "I"]
+
+
+ignore = ["F402", "F401", "I001"] # should Ignore unused imports and import related issues
