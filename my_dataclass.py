@@ -225,3 +225,62 @@ pprint(inspect.getmembers(Comment, inspect.isfunction))  # list all functions in
 #  ('__repr__', <function Comment.__repr__ at 0x0000023888EC4220>),
 #  ('__setattr__', <function Comment.__setattr__ at 0x0000023888EC45E0>),
 #  ('__setstate__', <function _dataclass_setstate at 0x0000023888EC2020>)]
+
+
+
+
+
+
+# =================================================
+# another example from the mind of pieces (w/ getter - property):
+# =================================================
+
+# and another link from Idently
+# YT URL: https://www.youtube.com/watch?v=E9tl3hP03lk
+from dataclasses import dataclass, field
+
+@dataclass
+class Person:
+    first_name: str
+    last_name: str
+    age: int
+    can_vote: bool = field(init=False)
+
+    @property # getter
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
+
+    @property # getter
+    def is_adult(self):
+        return self.age >= 18
+
+    @full_name.setter # without it, you cannot set the full_name property neither the first or last via that function
+    def full_name(self, value: str):
+        first, last = value.split(" ", 1)
+        self.first_name = first
+        self.last_name = last
+
+
+    def __post_init__(self):
+        print('called __post_init__ method')
+        self.can_vote = 18 <= self.age <= 70
+
+
+
+
+me = Person("Shai", "Cohen", 53)
+
+
+me.full_name = "haim moshe"
+print(me.full_name)
+# haim moshe
+
+print(me.first_name)
+# haim
+
+print(me.is_adult)
+# True
+
+print(me.can_vote)
+# True
+
