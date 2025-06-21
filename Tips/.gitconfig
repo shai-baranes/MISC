@@ -1,0 +1,24 @@
+[user]
+	name = shaib
+	email = shai.baranes@gmail.com
+[alias]
+	last = log -1 HEAD
+	loog = log --all --decorate --oneline --graph
+	uncache = rm -r --cached .
+	wdiff = diff --word-diff
+	st = status
+	cop = checkout -p
+	diffa = diff --staged --word-diff
+	diffs = diff --staged --word-diff
+	cm = commit -m
+	cma = commit --amend
+	cman = commit --amend --no-edit
+	alias = config --get-regexp ^alias
+	list = config --get-regexp ^alias
+	edit = config --global --edit
+	cob = checkout -B
+	resetc = rm -r --cached .
+	diffcommits = diff HEAD~1..HEAD
+	resethard = reset --HARD HEAD
+[rere]
+	enabled = true

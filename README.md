@@ -22,6 +22,7 @@
 
 ## Useful DOS command line prompt (bash equivalent):
 
+ - [Windows key+R] -> type: "control access.cpl" (you'll get quick access to change mouse behavior, e.g. activation upon mouse hovering)
  - tree     (nice tree representation of all folders/sub folders, hidden exclusive)
  - dir /ad  (list only directories)
  - dir /b /ad  (a bare '/b' presentation of directories without the noised columns)
@@ -35,7 +36,6 @@
  - explorer .  (opens the file browser deirectly from where you are in your CMD console directory)
  - curl "https://api.cryptowat.ch/markets/kraken/btceur/price"  (get status/response on web API)
  - python -m notebook (open python notebook from the local repository)
- - [Windows key+R] -> type: "control access.cpl" (you'll get quick access to change mouse behavior, e.g. activation upon mouse hovering)
  - [F7] keyboard key (like unix history, get the list of user prompts to the console - and you can toggle between prompts using the arrows)
  - echo hello world > tmp.txt (create a file with the text "hello world" in it)
  - echo sinderela >> tmp.txt (append the text "sinderela" to the end of the file tmp.txt. note that w/o the >> it replaces the existing content)
@@ -51,8 +51,8 @@
 
 
 ## Extras
- - [Current Working Directory] in python runtime: import os; os.getcwd() # helps to see what is the current working dir of the script
- - [Current Working Directory] in python runtime: import sys; sys.executable # helps to see what python environment (or .venv) you're in...
+ - [python] in python runtime: import os; os.getcwd() # helps to see what is the current working dir of the script (Current Working Directory)
+ - [python] in python runtime: import sys; sys.executable # helps to see what python environment (or .venv) you're in... (.venv)
  - [Sublime] search excluding folders: add '-' (minus sign) and folders to be excluded under 'Where', e.g. -*/venv/, -*/myvenv/, -*/.env/, 
  - python -m notebook (open python notebook from the local repository) 
  - sns.scatterplot.__doc__ (adding doc helps in getting the docstring of a function)
@@ -64,13 +64,20 @@
  - [Python Debug Mode] 'next', 'continue' (known), 'return' (step-out of the function) ↩️, 'h' (for help), 'h continue' (help on 'continue')
  - [Windows Emoji] 'Window KEY' + '.'
  - Create single-file executable: [Indently Vid](https://www.youtube.com/watch?v=bqNvkAfTvIc)
- - my general ruff configutayion file sits under: 'C:\Users\shaib\AppData\Roaming\ruff\pyproject.toml' (with some added features)
- - from cmd: >> ruff check --show-settings (to see all settings, under: linter.rules.enabled)
- - can also filter rules by cmd: >> ruff check --show-settings | findstr "(\*)"  # tbd without the "\"
+ -- Ruff related:
+ - [Ruff] basic documentation: https://docs.astral.sh/ruff/installation/
+ - [Ruff] my general ruff configuration file sits under: 'C:\Users\shaib\AppData\Roaming\ruff\pyproject.toml' (with some added features)
+ - [Ruff] from cmd: >> ruff check --show-settings (to see all settings, under: linter.rules.enabled)
+ - [Ruff] can also filter rules by cmd: >> ruff check --show-settings | findstr "(\*)"  # tbd without the "\"
  - [Windows] 'Ctrl+Shift+Esc' (to open the task manager directly)
  - [Sublime] 'Ctrl+Alt+/' ("Beyond Compare" diff tool package)
  - [Sublime] 'F10' (quick file name search w/ regex)
-
+ - [Streamlit] 'st.cache_data' (to cache data in Streamlit apps) TBD
+ - [Streamlit] streamlit run main.py (to run the Streamlit app) 'Verified'
+ - [Streamlit] streamlit config show (to show the current Streamlit configuration)
+ - [Streamlit] streamlit config set server.port 8502 (to set the port for the Streamlit app)
+ - [Streamlit] streamlit config set server.headless true (to run the Streamlit app in headless mode)
+ - [Streamlit] streamlit config set global.developmentMode false (to disable development mode)
 
 
 ## My most useful VIM commands:
@@ -93,6 +100,7 @@
 
  - git config --get-regexp ^alias (check on your pre-configured aliases)
  	- [YouTube: More Tips](https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s)
+ - also find my git aliases under: 'C:\Users\shaib\.gitconfig' (or ~/.gitconfig), also copied to the 'Tips' folder
 
 
 ## Abbreviation:
