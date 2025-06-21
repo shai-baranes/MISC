@@ -105,6 +105,3 @@
 
 ## Abbreviation:
 	'README.md' -> md for Markdown
-
-
-[TBD] (from rafael laptop) to remove!
