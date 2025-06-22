@@ -20,5 +20,6 @@
 	resetc = rm -r --cached .
 	diffcommits = diff HEAD~1..HEAD
 	resethard = reset --HARD HEAD
+	difff = diff -- . ":!uv.lock" ":!pyproject.toml"
 [rere]
 	enabled = true
