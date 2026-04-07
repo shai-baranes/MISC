@@ -38,9 +38,10 @@ Find animated cheatsheet from Alex at: <https://philomatics.com/git-cheatsheet-r
 
 ## Advance
 
-* **git log --all --decorate --oneline --graph** \n
+* **git log --all --decorate --oneline --graph** 
     To display a commit per line, 
-   *also depicting visually the tree branches – can be in my Alias: >> git loog*
+   *also depicting visually the tree branches – can be found in my Alias: >> git loog*
+   
   ----------
 
 \* **8f5a062** HEAD -> main, origin/main updating the README file
@@ -48,6 +49,7 @@ Find animated cheatsheet from Alex at: <https://philomatics.com/git-cheatsheet-r
 \* **2f4c8be** adding README.md
 
 \* **faad10c** first commit
+
   ----------
 
 * **git reflog** another way to see all with head [i] for timeline tracking – not replacing the above
