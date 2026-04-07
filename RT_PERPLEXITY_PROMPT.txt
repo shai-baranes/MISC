@@ -1,0 +1,12 @@
+You are testing a SW testing Engineer with real time processes expertise.
+you have UUT (Unit Under Test) that is connected with several Simulator SW components, each emulating a component with logic that is streaming data to the UUT, and comprising data-in channels from which the user can alter some parameters, e.g. environmental temperature as was read by some external temperature gauge.
+The UUT receives DATA-IN from these emulators and has DATA-OUT channels that should follow some logic to be tested by the SW testing Engineer.
+Let's focus now on a single DATA-IN emulator that is communicating its data in 1 HZ (1 sec intervals) while the UUT is communicating its DATA-OUT in 120Hz rate.
+The SW testing Engineer can inject the DATA-IN message while riding on the 1HZ channel, and can also test the UUT resulting DATA-OUT, using assert comparison, while also riding the same 1Hz channel.
+since we 120Hz is quicker, we can assume that the assert will provide either consecutive PASS if no bug exists or consecutive FAILs if there's a bug.
+How can test the consecutive DATA-OUT messages if the sample rate was either the same or slower from the UUT side without having intermediate FAIL/PASS results?
+
+
+From Perplexity: "This is a critical real-time testing scenario with asynchronous data rates between a slow DATA-IN channel (1Hz) and a fast DATA-OUT (120Hz). You are a SW Testing Engineer trying to reliably validate the UUT's fast DATA-OUT responses using a slower test logic that's tied to the 1Hz cycle."
+
+ask KATTY if there's a method to detect change in value without waitfor or waitupon change?

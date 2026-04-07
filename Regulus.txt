@@ -1,0 +1,71 @@
+Regulus
+
+
+
+Abbreviations/terminology:
+- GNSS: Global Navigation Satellite System (providing: location, navigation, and timing (PNT) services worldwide)
+    allowing devices to pinpoint locations using signals from space.
+- GNSS security module: acts as a firewall between the satellite signals and the drone's flight controller.
+- DSP: The Software & Digital Signal Processing.
+- "cross correlation": Cross-correlation measures the similarity between two data sets (signals, time series, images) as a function of their time
+     displacement or lag, essentially a "sliding dot product" that reveals if and how one signal resembles another when shifted. It's used for pattern recognition, time-delay estimation (finding out when one event triggers another), noise reduction, and finding a known feature within a longer signal, with results indicating strong positive (similar), negative (opposite), or zero (unrelated) correlation at different time shifts. 
+- Pristine: in its original condition; unspoiled.
+- LNAs: Low-Noise Amplifiers.
+    Electronic components that boost weak signals (like satellite or Wi-Fi) while adding minimal extra noise, essential for clear reception in devices from phones to medical equipment
+- SAW: 'Surface Acoustic Wave' filters.
+- SWaP: Size, Weight, and Power optimization (for the electrical components) - part of the Miniaturization needs.
+- Ruggedized: designed or improved to be hard-wearing or shock-resistant (to meet military grade!).
+- PNT Resilience: 'Positioning, Navigation, and Timing' resilience - the ability to maintain accurate location and timing information even in challenging environments or under attack.
+    PNT Resilience is the ability of systems to provide reliable location, direction, and precise time data even when primary sources (like GPS/GNSS) are disrupted by jamming, spoofing, or outages, using alternative signals, sensors (inertial), and backup systems to ensure critical infrastructure (finance, comms, transport) and military operations continue uninterrupted. It involves withstanding threats and recovering quickly through redundancy (multiple signal types), diversity (terrestrial, space-based), and authentication to avoid single points of failure. 
+
+
+
+The flagship product:
+    The Ring, a small-form-factor 'GNSS security module'. (that acts as a firewall between the satellite signals and the drone’s flight controller.)
+
+The Problem Solved by the 'GNSS Security Module':
+
+    Traditional GNSS receivers are "trusting"; they accept the strongest signal they find. A "spoofing" attack sends a fake GPS signal that convinces the drone it is somewhere else, allowing an adversary to hijack its flight path or force a crash.
+
+
+How it Functions (The System View):
+    - Detection: It uses proprietary algorithms to scan incoming RF (Radio Frequency) signals for inconsistencies.
+
+    - Protection: It differentiates between authentic satellite signals and malicious "fake" signals.
+
+    - Mitigation: It filters out the spoofed data, ensuring the autopilot receives only authenticated coordinates.
+
+
+
+
+Disciplines:
+A. The Software & Digital Signal Processing (DSP):
+    This is the "intelligence" of the system. In a system engineering context, this is where the logic resides.
+
+Signal Processing: Developing algorithms to analyze the "cross-correlation" of signals to detect time-shifts or power-level anomalies typical of spoofing.
+
+Machine Learning (ML): Regulus utilizes AI to recognize the "signatures" of various spoofing devices used by adversaries.
+
+Embedded Firmware: The code must run in real-time with near-zero latency; if the protection delay is too high, the drone’s flight controller will fail to maintain stability.
+
+Cybersecurity: Ensuring the Ring itself cannot be hacked via its communication ports (UART, CAN bus).
+
+
+B. Electrical & RF Engineering
+Since the drone lives and dies by its radio environment, the hardware must be pristine.
+
+RF Front-End Design: Designing Low-Noise Amplifiers (LNAs) and Surface Acoustic Wave (SAW) filters to handle specific frequency bands (L1, L2, etc.).
+
+Miniaturization: Military drones require SWaP (Size, Weight, and Power) optimization. The electrical engineers must cram high-performance processing onto a PCB the size of a matchbox.
+
+EMI/EMC Compliance: Ensuring the Ring doesn't interfere with the drone's other radios (telemetry, video feed) and is shielded from external electromagnetic interference.
+
+
+C. Mechanical Engineering
+In a military environment, "industrial grade" isn't enough; it must be "ruggedized."
+
+Environmental Protection: Designing enclosures rated for IP67 (dust and water immersion) and extreme temperature ranges (-40°C to +85°C).
+
+Vibration Isolation: Drones produce significant high-frequency vibration. The mechanical housing must protect the delicate oscillators and RF connections from "micro-cracks" or signal jitter.
+
+Thermal Management: High-speed signal processing generates heat. The casing often acts as a heat sink to prevent the internal CPU from throttling during desert operations.
