@@ -38,10 +38,9 @@ Find animated cheatsheet from Alex at: <https://philomatics.com/git-cheatsheet-r
 
 ## Advance
 
-* **git log --all --decorate --oneline --graph**
-    To display a commit per line, e.g:
-   *also depicting visually the tree branches – can be in Alias.
-  mine: >> git loog*
+* **git log --all --decorate --oneline --graph** \n
+    To display a commit per line, 
+   *also depicting visually the tree branches – can be in my Alias: >> git loog*
   ----------
 
 \* **8f5a062** HEAD -> main, origin/main updating the README file
