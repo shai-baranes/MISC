@@ -38,7 +38,8 @@ Find animated cheatsheet from Alex at: <https://philomatics.com/git-cheatsheet-r
 
 ## Advance
 
-* **git log --all --decorate --oneline --graph** To display a commit per line, e.g:
+* **git log --all --decorate --oneline --graph**
+    To display a commit per line, e.g:
    *also depicting visually the tree branches – can be in Alias.
   mine: >> git loog*
   ----------
@@ -48,7 +49,7 @@ Find animated cheatsheet from Alex at: <https://philomatics.com/git-cheatsheet-r
 \* **2f4c8be** adding README.md
 
 \* **faad10c** first commit
-----------
+  ----------
 
 * **git reflog** another way to see all with head [i] for timeline tracking – not replacing the above
 * **gitk** another lovely way to get a visual representation of all commits and branches!
