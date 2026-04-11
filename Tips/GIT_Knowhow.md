@@ -107,20 +107,27 @@ For more info: <https://www.youtube.com/watch?v=CAnQ4b0uais>
 
 ## Worktree for more info: <https://www.youtube.com/watch?v=ntM7utSjeVU&t=17s>
 
+* **git worktree add ..worktree\example-project-hotfix main** *[or master]*
+  clone the current project to ..worktree\example-project-hotfix folder – under the same root as for the project folder '..' and get there with only the committed code! – main branch!
 * **git worktree list** gives the list of worktrees / cloned and some maybe altered directories.
   *the first in line is the default worktree – the origin.*
-* **git worktree add .worktree\hotfix main** *[or master]*
-  clone the current project to .worktree\hotfix folder – under current path '.' and get there with only the committed code! – main branch!
+* **git branch** it is possible to have different branches in different worktrees, but not the same branch in 2 worktrees. (\* stands for the active branch in the current worktree)
+* **git branch hotfix** 
+* **git switch hotfix** switch to the newly created branch under the current worktree; *as we can have both active under same branch*
+* **git commit -a -m "hotfix; fix TBD"** for commiting our changes from the worktree
+* **git push -u origin hotfix** pushing as a new branch for our project (either that or merging it to main)
+
+
 
 *now git worktree list displays 2 items.*
 
-*Different branches are checked-out in diff worktrees can't check-out again*
+*Different branches are checked-out in diff worktrees*
 
-* **git worktree remove .** remove the worktree in current location – *to be followed by folder deletion*
+* **git worktree remove .** remove the worktree in current location – *to be followed by folder deletion / either that or continue saving it for later use*
 
 ## Extras
 
-***lovely tips from****: https://www.youtube.com/watch?v=aolI\_Rz0ZqY&t=437s*
+**lovely tips from**: https://www.youtube.com/watch?v=aolI\_Rz0ZqY&t=437s
 
 * **git blame [file\_name]** line by lines overview on a file while adding description on the non-committed lines.
 * **git blame -L 15,26 [file\_name]** same as above, with a slicing option for the lines we want to focus on -> reminds the functionality of '**git diff [file\_name]'**.md by with the option to widen the FOV.
