@@ -128,6 +128,8 @@ For more info: <https://www.youtube.com/watch?v=CAnQ4b0uais>
 ## Extras
 
 **lovely tips from**: https://www.youtube.com/watch?v=aolI\_Rz0ZqY&t=437s
+**lovely tips from**: <https://www.youtube.com/watch?v=aolI\_Rz0ZqY&t=437s>
+**lovely tips from**: <https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s>
 
 * **git blame [file\_name]** line by lines overview on a file while adding description on the non-committed lines.
 * **git blame -L 15,26 [file\_name]** same as above, with a slicing option for the lines we want to focus on -> reminds the functionality of '**git diff [file\_name]'**.md by with the option to widen the FOV.
