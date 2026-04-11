@@ -127,8 +127,6 @@ For more info: <https://www.youtube.com/watch?v=CAnQ4b0uais>
 
 ## Extras
 
-**lovely tips from**: https://www.youtube.com/watch?v=aolI\_Rz0ZqY&t=437s
-**lovely tips from**: <https://www.youtube.com/watch?v=aolI\_Rz0ZqY&t=437s>
 **lovely tips from**: <https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s>
 
 * **git blame [file\_name]** line by lines overview on a file while adding description on the non-committed lines.
