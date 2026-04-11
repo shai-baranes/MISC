@@ -37,9 +37,11 @@
  - curl "https://api.cryptowat.ch/markets/kraken/btceur/price"  (get status/response on web API)
  - python -m notebook (open python notebook from the local repository)
  - [F7] keyboard key (like unix history, get the list of user prompts to the console - and you can toggle between prompts using the arrows)
+ 		*not working from Sublime Terminus*
  - echo hello world > tmp.txt (create a file with the text "hello world" in it)
  - echo sinderela >> tmp.txt (append the text "sinderela" to the end of the file tmp.txt. note that w/o the >> it replaces the existing content)
  - type tmp.txt (read the content of the file tmp.txt; equivalent to 'cat' in Unix)
+ - doskey /history (to see the history of all commands entered in the current CMD session)
 
 
 ## pip/venv related (new to me; note that UV does it better!):
@@ -53,7 +55,6 @@
 ## Extras
  - [python] in python runtime: import os; os.getcwd() # helps to see what is the current working dir of the script (Current Working Directory)
  - [python] in python runtime: import sys; sys.executable # helps to see what python environment (or .venv) you're in... (.venv)
- - [Sublime] search excluding folders: add '-' (minus sign) and folders to be excluded under 'Where', e.g. -*/venv/, -*/myvenv/, -*/.env/, 
  - python -m notebook (open python notebook from the local repository) 
  - sns.scatterplot.__doc__ (adding doc helps in getting the docstring of a function)
  - [python] import inspect; inspect.signature(func)   --> (this bring the function signature and we see their agrs and their defaults)
@@ -78,6 +79,18 @@
  - [Streamlit] streamlit config set server.port 8502 (to set the port for the Streamlit app)
  - [Streamlit] streamlit config set server.headless true (to run the Streamlit app in headless mode)
  - [Streamlit] streamlit config set global.developmentMode false (to disable development mode)
+ - [python] py --list (to see all installed python versions on the system)
+ - [python] py -3.9 (to run python 3.9, if installed)
+ - [python] python --version (to see the current python version in use; also >python -V)
+ - [python] where python (to see the path of the current python executable in use)
+ - [python] streamlit --version (to see the current Streamlit version in use)
+ - [python] where streamlit (to see the path of the current Streamlit executable in use)
+ - [python] <https://www.python.org/downloads/>(to down any prior released version of python)
+ - [python] py -3.9 -m venv .venv (to create a virtual env using older python 3.9v) *or C:\Path\To\Python39\python.exe -m venv .venv*
+ - [python] python -m pip install streanlit==1.2.0 (to be followed by installing a specific [older] version of Streamlit)
+ - [python] python -m pip install protobuf==3.20.0 (to be followed by installing a specific [older] version of protobuf, which is a dependency for Streamlit)
+ - [python] pip install "altair<5" (if already from active env; to be followed by installing a specific [older] version of Altair, which is a dependency for Streamlit)
+
 
 
 ## My most useful VIM commands:
