@@ -125,7 +125,7 @@ For more info: <https://www.youtube.com/watch?v=CAnQ4b0uais>
 
 * **git worktree remove .** remove the worktree in current location – *to be followed by folder deletion / either that or continue saving it for later use*
 
-## Extras
+## Extras. (minor edit using iPad with stylus)
 
 **lovely tips from**: <https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s>
 
