@@ -105,8 +105,9 @@ For more info: <https://www.youtube.com/watch?v=CAnQ4b0uais>
 * **git config --get alias.[YOUR\_ALIAS]** for inspecting a specific alias, wheter exists and what aimed to do?
 * **git config --get-regexp ^alias** listing your user defined aliases – entire list
 
-## Worktree for more info: <https://www.youtube.com/watch?v=ntM7utSjeVU&t=17s>
-
+## Worktree
+for more info: <https://www.youtube.com/watch?v=ntM7utSjeVU&t=17s>
+* **git worktree add ../feature-x** = “make me a new folder and a new branch, and name them the same thing.”
 * **git worktree add ..worktree\example-project-hotfix main** *[or master]*
   clone the current project to ..worktree\example-project-hotfix folder – under the same root as for the project folder '..' and get there with only the committed code! – main branch!
 * **git worktree list** gives the list of worktrees / cloned and some maybe altered directories.
@@ -125,7 +126,7 @@ For more info: <https://www.youtube.com/watch?v=CAnQ4b0uais>
 
 * **git worktree remove .** remove the worktree in current location – *to be followed by folder deletion / either that or continue saving it for later use*
 
-## Extras. (minor edit using iPad with stylus)
+## Extras. 
 
 **lovely tips from**: <https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=437s>
 
